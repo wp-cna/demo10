@@ -50,7 +50,13 @@ const TOKEN_EXPANSIONS = {
   association: ["associations", "neighborhood", "workshop"],
   associations: ["association", "neighborhood", "wpcna"],
   posting: ["community", "submit", "submission"],
-  submit: ["posting", "community", "submission"]
+  submit: ["posting", "community", "submission"],
+  history: ["historic", "heritage", "battle", "revolutionary", "1776", "genealogy", "landmark"],
+  historic: ["history", "heritage", "landmark"],
+  heritage: ["history", "historic"],
+  battle: ["history", "1776", "revolutionary"],
+  revolutionary: ["history", "1776", "battle"],
+  genealogy: ["history", "family"]
 };
 
 const TOPIC_HINTS = [
@@ -77,6 +83,11 @@ const TOPIC_HINTS = [
   {
     when: ["posting", "submit", "submission", "community"],
     types: ["community-posting"],
+    bonus: 12
+  },
+  {
+    when: ["history", "historic", "heritage", "battle", "revolutionary", "1776", "genealogy", "landmark"],
+    types: ["history", "neighborhood", "event"],
     bonus: 12
   }
 ];

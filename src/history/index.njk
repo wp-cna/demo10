@@ -1,0 +1,82 @@
+---
+layout: layouts/base.njk
+title: White Plains History
+metaDescription: Historical context already represented across the WPCNA site, including neighborhood pages and current history-related events.
+---
+{% from "components/macros.njk" import neighborhoodCard, eventCard %}
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">White Plains</p>
+    <h1>White Plains history</h1>
+    <p>A short guide to the historical context already represented across the current WPCNA site.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="spotlight">
+      <div>
+        <p class="eyebrow">Scope</p>
+        <h2>History already covered on the site</h2>
+        {% for paragraph in history.overview %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+
+      <div class="spotlight-card">
+        <p class="eyebrow">Ask White Plains</p>
+        <h3>Questions that fit this material</h3>
+        <ul class="ask-guidelines">
+          {% for prompt in history.askPrompts %}
+            <li>{{ prompt }}</li>
+          {% endfor %}
+        </ul>
+        <a class="btn btn-primary btn-block" href="{{ '/ask/' | withPrefix }}" style="margin-top:0.75rem">Ask White Plains</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-header">
+      <div>
+        <h2>Historic threads in the neighborhood guide</h2>
+        <p>These neighborhood pages already include visible historical context tied to White Plains.</p>
+      </div>
+      <a class="link-arrow" href="{{ '/neighborhoods/' | withPrefix }}">All neighborhoods</a>
+    </div>
+
+    <div class="card-grid">
+      {% for neighborhood in history.featuredNeighborhoods %}
+        {{ neighborhoodCard(neighborhood) }}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-header">
+      <div>
+        <h2>History-related events on the calendar</h2>
+        <p>Current listings from approved site sources that touch on local history, preservation, or genealogy.</p>
+      </div>
+      <a class="link-arrow" href="{{ '/events/' | withPrefix }}">All events</a>
+    </div>
+
+    {% if history.historyEvents.length %}
+      <div class="card-grid">
+        {% for event in history.historyEvents %}
+          {{ eventCard(event) }}
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="empty-state">
+        <h3>No history-focused events are listed right now.</h3>
+        <p>Check back later or browse the full events calendar.</p>
+      </div>
+    {% endif %}
+  </div>
+</section>

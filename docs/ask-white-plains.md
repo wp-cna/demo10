@@ -12,6 +12,7 @@ It is split into two parts:
 The assistant is intentionally narrow. It answers from approved WPCNA and site content such as:
 
 - homepage and about-page content
+- White Plains history already represented on the site
 - agendas and meeting materials
 - handbook / workshop content
 - events pages
@@ -131,6 +132,7 @@ Recommended smoke test:
 3. Open `/ask/`.
 4. Try:
    - `What does WPCNA do?`
+   - `What history does the site cover about White Plains?`
    - `How do I submit a community posting?`
    - `Where can I find agendas?`
    - `Tell me about Fisher Hill.`

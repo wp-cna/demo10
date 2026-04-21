@@ -82,6 +82,7 @@ function inferType(url) {
   if (url === "/") return "home";
   if (url === "/about/") return "wpcna";
   if (url === "/agendas/") return "agendas";
+  if (url === "/history/") return "history";
   if (url === "/workshops/" || url === "/handbook/") return "handbook";
   if (url === "/events/") return "events";
   if (url.startsWith("/events/")) return "event";

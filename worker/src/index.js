@@ -11,8 +11,11 @@ const CAPABILITY_PATTERN = /^(?:help|what can you do|what do you do|who are you|
 const SHORT_GENERIC_PATTERN = /^(?:thanks|thank you|ok|okay|cool|nice|test|testing)[!.?]*$/i;
 const SCHEDULE_INTENT_PATTERN = /\b(?:when|next|upcoming|today|tonight|tomorrow|date|time)\b/i;
 const EVENT_SUBJECT_PATTERN = /\b(?:meeting|meetings|event|events|session|sessions|hearing|hearings|workshop|workshops|council|board|commission)\b/i;
+const HISTORY_INTENT_PATTERN = /\b(?:history|historic|heritage|battle|revolutionary|genealogy|landmark|roots|past)\b/i;
+const DESCRIPTIVE_INTENT_PATTERN = /\b(?:tell me about|what does the site say about|what does the site cover|what can you tell me about|describe)\b/i;
 const EVENT_FIELD_LABELS = new Set(["Status", "Date", "Time", "Location", "Address", "Source"]);
 const EVENT_FIELD_STOP_LINES = new Set(["More Events", "Related events", "More Resources", "Related resources"]);
+const NARRATIVE_FRIENDLY_TYPES = new Set(["history", "neighborhood", "wpcna", "community-posting", "handbook", "agendas", "page", "home"]);
 const LOOKUP_STOP_WORDS = new Set([
   "a",
   "an",
@@ -145,8 +148,8 @@ function cleanAnswer(answer) {
 
 function scopeAnswer() {
   return [
-    "Hi. Ask about neighborhoods, WPCNA, agendas, events, community posting, the CNA Workshop Handbook, and local resources covered on this site.",
-    "Try something like: What does WPCNA do? Where can I find agendas? Tell me about Fisher Hill."
+    "Hi. Ask about neighborhoods, White Plains history already covered on the site, WPCNA, agendas, events, community posting, the CNA Workshop Handbook, and local resources.",
+    "Try something like: What does WPCNA do? What history does the site cover about White Plains? Where can I find agendas?"
   ].join("\n\n");
 }
 
@@ -172,6 +175,102 @@ function buildVisibleSources(sources) {
     type: source.type,
     excerpt: source.excerpt
   }));
+}
+
+function extractMeaningfulBlocks(source) {
+  const normalizedTitle = normalizeLookupText(source.title);
+  const normalizedExcerpt = normalizeLookupText(source.excerpt);
+
+  return String(source.text || "")
+    .split(/\n+/)
+    .map((block) => block.trim())
+    .filter(Boolean)
+    .filter((block) => {
+      const normalizedBlock = normalizeLookupText(block);
+
+      if (!normalizedBlock || normalizedBlock === normalizedTitle || normalizedBlock === normalizedExcerpt) {
+        return false;
+      }
+
+      if (/^learn about .* part of /i.test(block)) {
+        return false;
+      }
+
+      if (/open full map/i.test(block) || /source cc/i.test(block)) {
+        return false;
+      }
+
+      if (!/[.:!?]/.test(block) && block.split(/\s+/).length <= 10) {
+        return false;
+      }
+
+      return true;
+    });
+}
+
+function scoreNarrativeSource(source, question) {
+  const normalizedQuestion = normalizeLookupText(question);
+  const tokens = tokenizeLookup(question);
+  const normalizedTitle = normalizeLookupText(source.title);
+  let score = Number(source.score || 0);
+
+  if (normalizedTitle && normalizedQuestion.includes(normalizedTitle)) {
+    score += 30;
+  }
+
+  tokens.forEach((token) => {
+    if (normalizedTitle.includes(token)) {
+      score += 8;
+    }
+  });
+
+  if (source.type === "history") {
+    score += 8;
+  }
+
+  if (source.type === "neighborhood") {
+    score += 6;
+  }
+
+  return score;
+}
+
+function buildStructuredNarrativeAnswer(question, sources) {
+  const wantsNarrative = HISTORY_INTENT_PATTERN.test(question) || DESCRIPTIVE_INTENT_PATTERN.test(question);
+
+  if (!wantsNarrative) {
+    return null;
+  }
+
+  const candidates = dedupeSources(sources)
+    .filter((source) => NARRATIVE_FRIENDLY_TYPES.has(source.type))
+    .map((source) => ({
+      source,
+      blocks: extractMeaningfulBlocks(source),
+      score: scoreNarrativeSource(source, question)
+    }))
+    .filter((candidate) => candidate.blocks.length);
+
+  if (!candidates.length) {
+    return null;
+  }
+
+  candidates.sort((left, right) => right.score - left.score);
+
+  const best = candidates[0];
+  const answer = best.blocks
+    .slice(0, best.source.type === "history" ? 3 : 2)
+    .join(" ")
+    .trim();
+
+  if (!answer) {
+    return null;
+  }
+
+  return {
+    answer,
+    sources: [best.source, ...sources.filter((source) => source.url !== best.source.url)]
+  };
 }
 
 function extractEventFields(text = "") {
@@ -459,6 +558,19 @@ export default {
         {
           answer: cleanAnswer(structuredAnswer.answer) || FALLBACK_ANSWER,
           sources: buildVisibleSources(structuredAnswer.sources)
+        },
+        200,
+        corsHeaders || {}
+      );
+    }
+
+    const narrativeAnswer = buildStructuredNarrativeAnswer(question, retrievedSources);
+
+    if (narrativeAnswer) {
+      return jsonResponse(
+        {
+          answer: cleanAnswer(narrativeAnswer.answer) || FALLBACK_ANSWER,
+          sources: buildVisibleSources(narrativeAnswer.sources)
         },
         200,
         corsHeaders || {}

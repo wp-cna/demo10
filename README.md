@@ -96,6 +96,7 @@ In production, the build uses the `/wpcna2/` path prefix so links and assets res
 ## Ask White Plains
 
 The site now includes a grounded AI feature at [`/ask/`](./src/ask/index.njk).
+It also supports White Plains history questions when that history is already represented on current site pages and approved source content.
 
 Implementation and deployment notes for the static frontend, retrieval index, and Cloudflare Worker backend live in [`docs/ask-white-plains.md`](./docs/ask-white-plains.md).
 

@@ -7,6 +7,7 @@ const SYSTEM_PROMPT = [
   "Use only the provided source excerpts.",
   `If the sources do not support an answer, say exactly: "${FALLBACK_ANSWER}"`,
   "Keep answers concise, useful, plainspoken, and grounded in the retrieved content.",
+  "This can include White Plains history only when that history is supported by the provided site sources.",
   "Do not invent facts or rely on outside knowledge.",
   "Do not provide emergency, legal, medical, real estate, school ranking, safety, or official government advice.",
   "If the question asks for official city help and the sources do not include that information, use the fallback sentence.",
