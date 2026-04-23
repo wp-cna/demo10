@@ -152,6 +152,34 @@ metaDescription: The neighborhood-centered civic hub for agendas, events, repres
             {% for paragraph in neighborhood.bodyParagraphs %}
               <p>{{ paragraph }}</p>
             {% endfor %}
+
+            {% if neighborhood.mapRegion %}
+              <div class="represented-modal-map">
+                <p class="eyebrow">On the map</p>
+                <figure class="represented-modal-map-frame">
+                  <img
+                    src="{{ representedNeighborhoods.imagePath | withPrefix }}?v={{ representedNeighborhoods.imageVersion }}"
+                    alt="White Plains neighborhood map with {{ neighborhood.name }} outlined."
+                    loading="lazy"
+                  >
+                  <svg
+                    class="represented-modal-map-svg"
+                    viewBox="0 0 {{ representedNeighborhoods.imageWidth }} {{ representedNeighborhoods.imageHeight }}"
+                    aria-hidden="true"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <polygon class="represented-modal-map-polygon represented-modal-map-polygon-halo" points="{{ neighborhood.mapRegion.points }}"></polygon>
+                    <polygon class="represented-modal-map-polygon" points="{{ neighborhood.mapRegion.points }}"></polygon>
+                  </svg>
+                </figure>
+                <p class="represented-modal-map-caption">{{ neighborhood.name }} shown on the White Plains neighborhood map.</p>
+              </div>
+            {% elif neighborhood.reviewNote %}
+              <div class="represented-modal-map-unavailable">
+                <p>Map location is being confirmed for this neighborhood.</p>
+              </div>
+            {% endif %}
           </div>
         </div>
       </article>
