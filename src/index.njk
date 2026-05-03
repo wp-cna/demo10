@@ -246,18 +246,22 @@ metaDescription: The neighborhood-centered civic hub for agendas, events, repres
 
 <section class="section section-alt">
   <div class="wrap">
-    <div class="spotlight-card spotlight-combined">
-      <p class="eyebrow">About WPCNA</p>
-      <h2>Neighborhood voices, citywide view</h2>
-      <p><strong>WPCNA</strong> &mdash; the <strong>White Plains Council of Neighborhood Associations</strong> &mdash; brings neighborhood associations together, shares information across the city, and helps residents keep track of what matters in White Plains. {{ site.purpose }}</p>
+    <div class="spotlight-card spotlight-combined home-about-card">
+      <div>
+        <p class="eyebrow">About WPCNA</p>
+        <h2>Neighborhood voices, citywide view</h2>
+        <p>WPCNA connects neighborhood associations across White Plains so residents can share information, raise concerns, and follow civic life through a neighborhood lens.</p>
+      </div>
 
-      <h3>Contact WPCNA</h3>
-      <p>{{ site.location }}</p>
-      <p>{{ site.meetingNote }}</p>
-
-      <div class="spotlight-actions">
-        <a class="btn btn-primary" href="{{ '/about/' | withPrefix }}">About WPCNA</a>
-        <a class="btn btn-outline" href="{{ '/about/#contact-form' | withPrefix }}">Get in touch</a>
+      <div class="home-contact-compact">
+        <p class="eyebrow">Get in touch</p>
+        <h3>Contact WPCNA</h3>
+        <p>{{ site.location }}</p>
+        <p>Meetings are typically on the second Tuesday at 7:00 p.m.; check the latest agenda before attending.</p>
+        <div class="spotlight-actions">
+          <a class="btn btn-primary" href="{{ '/about/' | withPrefix }}">About WPCNA</a>
+          <a class="btn btn-outline" href="{{ '/about/#contact-form' | withPrefix }}">Get in touch</a>
+        </div>
       </div>
     </div>
   </div>
