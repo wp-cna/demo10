@@ -1472,8 +1472,53 @@ h3 { font-size: clamp(1.15rem, 2vw, 1.35rem); }
   margin-top: 0.5rem;
 }
 
+.posting-page {
+  display: grid;
+  gap: 2rem;
+}
+
+.posting-intro,
+.posting-include {
+  max-width: 52rem;
+}
+
+.posting-intro p,
+.posting-include p,
+.posting-form-card p {
+  color: var(--ink-secondary);
+  line-height: 1.65;
+}
+
 .posting-grid {
-  margin-top: 1.5rem;
+  margin-top: 0;
+}
+
+.posting-grid .plain-list {
+  list-style: disc;
+  padding-left: 1.15rem;
+}
+
+.posting-grid .plain-list li {
+  color: var(--ink-secondary);
+  line-height: 1.5;
+}
+
+.posting-form-card {
+  max-width: 46rem;
+}
+
+.posting-form-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.posting-form-card .form-note {
+  margin: 0.25rem 0 0;
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+}
+
+.form-honeypot {
+  display: none;
 }
 
 .ask-shell {
