@@ -10,37 +10,7 @@ metaDescription: A selective calendar of events, meetings, and public life aroun
   <h1 class="image-hero-label">Events in White Plains</h1>
 </section>
 
-<section class="section-compact">
-  <div class="wrap">
-    <form class="filter-bar" data-event-filters>
-      <label>
-        <span>Search</span>
-        <input type="search" name="search" placeholder="Event, place, organizer, or tag">
-      </label>
-      <label>
-        <span>Category</span>
-        <select name="category">
-          <option value="">All categories</option>
-          {% for category in eventStore.categories %}
-            <option value="{{ category }}">{{ category }}</option>
-          {% endfor %}
-        </select>
-      </label>
-      <label>
-        <span>Month</span>
-        <select name="month">
-          <option value="">All months</option>
-          {% for monthKey in eventStore.months %}
-            <option value="{{ monthKey }}">{{ monthKey | monthYearLabel }}</option>
-          {% endfor %}
-        </select>
-      </label>
-      <button class="btn btn-outline" type="reset">Clear</button>
-    </form>
-  </div>
-</section>
-
-<section class="section" data-event-section data-upcoming-events>
+<section class="section events-upcoming-section" data-event-section data-upcoming-events>
   <div class="wrap">
     <div class="section-header">
       <div>

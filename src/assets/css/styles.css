@@ -597,6 +597,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 
 .image-hero-neighborhoods img {
   object-position: center 38%;
+  filter: brightness(1.04) contrast(0.92) saturate(1.12) sepia(0.06);
 }
 
 .neighborhood-detail-hero {
@@ -1335,6 +1336,15 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   text-decoration: none;
 }
 .event-card-body h3 a:hover { text-decoration: underline; }
+
+.events-upcoming-section {
+  padding-top: clamp(1rem, 2vw, 1.5rem);
+}
+
+.events-upcoming-section .section-header {
+  padding-top: 0;
+  border-top: 0;
+}
 
 .event-card-date {
   font-size: 0.85rem;
@@ -2262,6 +2272,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 
 /* ─── Interactive neighborhood map ─── */
 .neighborhood-map-section {
+  padding: clamp(1rem, 2vw, 1.5rem) 0 clamp(3.25rem, 5vw, 5.5rem);
   background: var(--bg);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -2340,11 +2351,16 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 }
 
 .interactive-map-sidebar-intro {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
-.interactive-map-sidebar-intro p:last-child {
-  color: var(--ink-secondary);
+.neighborhood-map-lead {
+  max-width: 35rem;
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.08rem, 1.5vw, 1.28rem);
+  font-weight: 700;
+  line-height: 1.45;
 }
 
 .map-tile-grid {
@@ -2419,6 +2435,12 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.neighborhood-guide-cta {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
 }
 
 /* ─── Neighborhood group ─── */

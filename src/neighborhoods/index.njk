@@ -58,9 +58,7 @@ metaDescription: Explore White Plains through an interactive neighborhood map an
 
       <div class="interactive-map-sidebar">
         <div class="interactive-map-sidebar-intro">
-          <p class="eyebrow">Featured Neighborhoods</p>
-          <h2>WPCNA-represented neighborhoods</h2>
-          <p>These featured neighborhoods are currently represented through WPCNA.</p>
+          <p class="neighborhood-map-lead">These neighborhood associations are currently represented through WPCNA.</p>
         </div>
 
         <div class="map-tile-grid">
@@ -95,12 +93,16 @@ metaDescription: Explore White Plains through an interactive neighborhood map an
             </article>
           {% endfor %}
         </div>
+
+        <div class="neighborhood-guide-cta">
+          <a class="link-arrow" href="{{ '/neighborhoods/#neighborhood-areas' | withPrefix }}">Full neighborhood guide</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="neighborhood-areas">
   <div class="wrap">
     <div class="section-header">
       <div>
