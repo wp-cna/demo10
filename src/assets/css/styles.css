@@ -4,7 +4,7 @@
   --bg-alt: #ffffff;
   --surface: #ffffff;
   --header-bg: #d9581f;
-  --header-rule: #151515;
+  --header-rule: #ffffff;
 
   /* Type */
   --ink: #151515;
@@ -126,24 +126,30 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   color: #fff;
 }
 
+.site-brand:hover,
+.site-brand:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
 .site-brand-stack {
-  flex: 0 0 clamp(13.5rem, 21vw, 15.5rem);
+  flex: 0 0 clamp(19rem, 26vw, 22rem);
   align-self: stretch;
   display: flex;
   align-items: center;
-  padding: 0.85rem 1rem 0.85rem clamp(1rem, 2vw, 1.5rem);
-  border-right: 5px solid var(--header-rule);
+  padding: 0.85rem 1rem 0.85rem clamp(1rem, 1.7vw, 1.25rem);
+  border-right: 8px solid var(--header-rule);
 }
 
 .brand-lockup {
   display: grid;
-  gap: 0.03rem;
+  gap: 0.02rem;
   color: #fff;
-  font-family: "Inter Tight", "Arial Narrow", "Helvetica Neue Condensed", sans-serif;
-  font-size: clamp(1.15rem, 2.15vw, 1.55rem);
-  font-weight: 800;
+  font-family: "Roboto Condensed", "Arial Narrow", "Helvetica Neue Condensed", sans-serif;
+  font-size: clamp(1.65rem, 2.6vw, 2.1rem);
+  font-weight: 900;
   text-transform: none;
-  line-height: 0.98;
+  line-height: 1.02;
   letter-spacing: 0;
 }
 
@@ -2586,8 +2592,15 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
     gap: 1rem;
   }
 
+  .site-brand-stack {
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: calc(100% - 4.5rem);
+    min-height: var(--header-h);
+  }
+
   .brand-lockup {
-    font-size: clamp(1.1rem, 5vw, 1.55rem);
+    font-size: clamp(1.55rem, 7.5vw, 2rem);
   }
 
   .nav-toggle { display: inline-flex; }
