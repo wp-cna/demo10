@@ -19,11 +19,7 @@ eleventyComputed:
     <img class="neighborhood-detail-hero-media" src="{{ neighborhood.displayHero.imagePath | withPrefix }}" alt="{{ neighborhood.displayHero.altText }}" loading="eager">
   {% endif %}
 
-  <div class="neighborhood-detail-hero-overlay">
-    <div class="image-hero-block neighborhood-detail-hero-block">
-      <h1>{{ neighborhood.name }}</h1>
-    </div>
-  </div>
+  <h1 class="sr-only">{{ neighborhood.name }}</h1>
 </section>
 
 {% if not neighborhood.profilePlaceholder and neighborhood.displayHero %}
@@ -41,6 +37,8 @@ eleventyComputed:
     <a class="back-link" href="{{ '/neighborhoods/' | withPrefix }}">Neighborhoods</a>
 
     <article class="neighborhood-profile-copy">
+      <h1>{{ neighborhood.name }}</h1>
+
       {% if neighborhood.profilePlaceholder %}
         <p>{{ neighborhood.displayDetailParagraphs[0] }}</p>
       {% else %}

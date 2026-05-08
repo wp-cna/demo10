@@ -3,7 +3,7 @@
   --bg: #ffffff;
   --bg-alt: #ffffff;
   --surface: #ffffff;
-  --header-bg: #b44d1b;
+  --header-bg: #d9581f;
   --header-rule: #151515;
 
   /* Type */
@@ -16,15 +16,12 @@
   --border-strong: #b7afa3;
 
   /* Brand */
-  --brand: #b44d1b;
-  --brand-hover: #8f3b11;
-  --brand-light: #f4c3a3;
-  --brand-soft: #fff7f1;
-  --accent: #c65a24;
+  --brand: #d9581f;
+  --brand-hover: #b74714;
+  --brand-light: #f4b28f;
+  --brand-soft: #fff5ef;
+  --accent: #d9581f;
   --accent-light: #fff1e8;
-
-  /* Hero scrim */
-  --hero-scrim: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.52) 100%);
 
   /* Shadows */
   --shadow-sm: 0 1px 0 rgba(0,0,0,0.06);
@@ -35,7 +32,7 @@
   --radius: 0;
   --radius-lg: 0;
   --max-w: 1180px;
-  --header-h: 112px;
+  --header-h: 108px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -114,14 +111,14 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 }
 
 .header-inner {
-  width: min(100% - 2rem, var(--max-w));
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: var(--header-h);
-  gap: 1.35rem;
+  gap: 0;
 }
 
 .site-brand {
@@ -130,19 +127,24 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 }
 
 .site-brand-stack {
-  flex: 0 0 auto;
+  flex: 0 0 clamp(13.5rem, 21vw, 15.5rem);
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding: 0.85rem 1rem 0.85rem clamp(1rem, 2vw, 1.5rem);
+  border-right: 5px solid var(--header-rule);
 }
 
 .brand-lockup {
   display: grid;
-  gap: 0.02rem;
+  gap: 0.03rem;
   color: #fff;
   font-family: "Inter Tight", "Arial Narrow", "Helvetica Neue Condensed", sans-serif;
-  font-size: clamp(1.25rem, 2.4vw, 2rem);
+  font-size: clamp(1.15rem, 2.15vw, 1.55rem);
   font-weight: 800;
-  text-transform: uppercase;
-  line-height: 0.88;
-  letter-spacing: -0.035em;
+  text-transform: none;
+  line-height: 0.98;
+  letter-spacing: 0;
 }
 
 .nav-list {
@@ -157,10 +159,10 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   display: block;
   padding: 0.95rem 1rem;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 800;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
   text-decoration: none;
   transition: background 0.15s, color 0.15s;
   border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -173,9 +175,9 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 }
 
 .site-nav a[aria-current="page"] {
-  background: #fff;
-  color: var(--brand);
-  border-color: #fff;
+  background: rgba(255,255,255,0.14);
+  color: #fff;
+  border-color: rgba(255,255,255,0.2);
 }
 
 .site-nav {
@@ -479,20 +481,12 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 
 .image-hero {
   position: relative;
-  min-height: clamp(22rem, 56vw, 38rem);
+  min-height: 0;
+  aspect-ratio: 1008 / 548;
   display: grid;
   align-items: end;
   overflow: hidden;
-  background: var(--ink);
-}
-
-.image-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--hero-scrim);
-  pointer-events: none;
-  z-index: 0;
+  background: var(--bg);
 }
 
 .image-hero img {
@@ -524,11 +518,11 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 }
 
 .image-hero-neighborhoods {
-  min-height: clamp(20rem, 52vw, 36rem);
+  min-height: 0;
 }
 
 .image-hero-home {
-  min-height: clamp(24rem, 58vw, 42rem);
+  min-height: 0;
 }
 
 .image-hero-neighborhoods img {
@@ -544,15 +538,6 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   overflow: hidden;
   background: var(--ink);
   border-bottom: 1px solid var(--border);
-}
-
-.neighborhood-detail-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--hero-scrim);
-  pointer-events: none;
-  z-index: 0;
 }
 
 .neighborhood-detail-hero-media {
@@ -578,18 +563,6 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   text-transform: uppercase;
 }
 
-.neighborhood-detail-hero-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .neighborhood-hero-creditbar {
   display: flex;
   flex-wrap: wrap;
@@ -613,88 +586,6 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   color: var(--ink-secondary);
   font-size: clamp(1.05rem, 1.6vw, 1.2rem);
   line-height: 1.75;
-}
-
-.image-hero-content {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.image-hero-block {
-  width: max-content;
-  max-width: min(calc(100vw - 2rem), 36rem);
-  margin: 0;
-  padding: clamp(1.35rem, 3vw, 2.25rem) clamp(1.2rem, 2.8vw, 2rem);
-  background: var(--brand);
-  color: #fff;
-  box-shadow: 0 18px 48px rgba(0,0,0,0.28);
-}
-
-.neighborhood-detail-hero-block {
-  width: max-content;
-  max-width: min(calc(100vw - 2rem), 28rem);
-}
-
-.neighborhood-detail-hero-block h1 {
-  font-size: clamp(2.35rem, 5vw, 4.75rem);
-}
-
-.image-hero-block h1,
-.image-hero-block p {
-  color: #fff;
-}
-
-.image-hero-block h1 {
-  margin-bottom: 0;
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  letter-spacing: 0;
-}
-
-.image-hero:not(.image-hero-home) .image-hero-block h1 {
-  font-size: clamp(2rem, 4.2vw, 4rem);
-}
-
-.image-hero-block p {
-  margin: 0;
-  font-size: clamp(1.15rem, 2.4vw, 1.75rem);
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.image-hero-home .image-hero-block {
-  width: min(100%, 32rem);
-  padding-block: clamp(1.6rem, 3.4vw, 2.6rem);
-}
-
-.image-hero-home .image-hero-block h1 {
-  display: grid;
-  gap: 0.55rem;
-  font-size: clamp(1.25rem, 2.7vw, 2.2rem);
-  line-height: 1.1;
-}
-
-.image-hero-home .image-hero-block h1 span {
-  display: block;
-}
-
-.image-hero-about .image-hero-block {
-  width: min(100%, 42rem);
-}
-
-.image-hero-block-neighborhoods {
-  max-width: calc(100vw - 2rem);
-}
-
-.image-hero-block-neighborhoods h1 {
-  font-size: clamp(2rem, 4vw, 4rem);
-  white-space: nowrap;
 }
 
 .image-hero-placeholder {
@@ -2649,10 +2540,11 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   }
 
   .site-nav .nav-list {
-    display: grid;
-    grid-template-columns: repeat(8, minmax(0, 1fr));
-    gap: 0.35rem;
+    display: flex;
+    justify-content: space-around;
+    gap: clamp(0.8rem, 1.8vw, 2.2rem);
     align-items: center;
+    height: var(--header-h);
     width: 100%;
   }
 
@@ -2663,13 +2555,13 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   .site-nav a {
     border-bottom: 0;
     display: flex;
-    min-height: 3.2rem;
+    min-height: var(--header-h);
     align-items: center;
     justify-content: center;
-    padding: 0.55rem 0.5rem;
+    padding: 0 0.35rem;
     color: #fff;
-    font-size: clamp(0.62rem, 0.66vw, 0.74rem);
-    line-height: 1.15;
+    font-size: clamp(0.78rem, 0.95vw, 0.95rem);
+    line-height: 1.08;
     text-align: center;
   }
 
@@ -2679,8 +2571,8 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   }
 
   .site-nav a[aria-current="page"] {
-    background: #fff;
-    color: var(--brand);
+    background: transparent;
+    color: #fff;
   }
 }
 
@@ -2723,7 +2615,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
     border-bottom: 1px solid var(--border);
     color: var(--ink);
     font-size: 0.82rem;
-    letter-spacing: 0.08em;
+    letter-spacing: 0;
   }
 
   .site-nav a:hover {
@@ -2737,37 +2629,11 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   }
 
   .image-hero {
-    min-height: 28rem;
+    min-height: 0;
   }
 
   .neighborhood-detail-hero {
     min-height: 0;
-  }
-
-  .image-hero-content {
-    justify-content: flex-end;
-  }
-
-  .image-hero-block {
-    width: max-content;
-    max-width: min(calc(100vw - 2rem), 34rem);
-  }
-
-  .image-hero-home .image-hero-block {
-    width: min(88vw, 30rem);
-  }
-
-  .image-hero-about .image-hero-block {
-    width: min(88vw, 34rem);
-  }
-
-  .image-hero-block-neighborhoods {
-    max-width: calc(100vw - 2rem);
-  }
-
-  .neighborhood-detail-hero-block {
-    width: max-content;
-    max-width: min(calc(100vw - 2rem), 24rem);
   }
 
   .map-tile-grid { grid-template-columns: 1fr 1fr; }
@@ -2810,34 +2676,11 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   .filter-bar label { min-width: 100%; }
   .map-tile-grid { grid-template-columns: 1fr; }
   .image-hero {
-    min-height: 24rem;
+    min-height: 0;
   }
 
   .neighborhood-detail-hero {
     min-height: 0;
-  }
-
-  .image-hero-block {
-    width: max-content;
-    max-width: min(calc(100vw - 2rem), 30rem);
-    padding: 1.15rem 1rem;
-  }
-
-  .image-hero-home .image-hero-block {
-    width: min(88vw, 28rem);
-  }
-
-  .image-hero-about .image-hero-block {
-    width: min(88vw, 30rem);
-  }
-
-  .image-hero-block-neighborhoods {
-    max-width: calc(100vw - 2rem);
-  }
-
-  .neighborhood-detail-hero-block {
-    width: max-content;
-    max-width: min(calc(100vw - 2rem), 20rem);
   }
 
   .home-photo-carousel { padding: 0; }

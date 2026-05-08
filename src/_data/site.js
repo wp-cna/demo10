@@ -1,7 +1,7 @@
 const neighborhoodStore = require("./neighborhoodStore");
 
 const runtimePathPrefix = process.env.SITE_PATH_PREFIX || "/";
-const canonicalPathPrefix = process.env.CANONICAL_PATH_PREFIX || process.env.SITE_PATH_PREFIX || "/wpcna12";
+const canonicalPathPrefix = process.env.CANONICAL_PATH_PREFIX || process.env.SITE_PATH_PREFIX || "/wpcna13";
 const deployBaseUrl = process.env.SITE_BASE_URL || "https://never-nude.github.io";
 const cleanCanonicalPrefix = canonicalPathPrefix === "/" ? "" : canonicalPathPrefix.replace(/\/$/, "");
 const homeHeroImage = "/assets/img/home/legacy-carousel/White-Plains.jpeg";
@@ -161,12 +161,12 @@ const closerLookCarousel = uniqueCarouselPhotos([
 module.exports = {
   name: "White Plains Council of Neighborhood Associations",
   shortName: "WPCNA",
-  brandLines: ["White Plains", "Council of", "Neighborhood", "Associations"],
+  brandLines: ["White Plains Council", "Of Neighborhood", "Associations"],
   tagline: "Neighborhood-centered civic hub for White Plains.",
   baseUrl: `${deployBaseUrl.replace(/\/$/, "")}${cleanCanonicalPrefix}`,
   pathPrefix: runtimePathPrefix,
-  themeColor: "#b44d1b",
-  assetVersion: "2026-05-08-represented-card-copy",
+  themeColor: "#d9581f",
+  assetVersion: "2026-05-08-pdf-index-theme",
   contactName: "Michael Dalton, President",
   email: "info@wpcna.org",
   contactFormAction: "https://formsubmit.co/info@wpcna.org",
