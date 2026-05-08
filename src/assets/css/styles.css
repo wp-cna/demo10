@@ -3,7 +3,7 @@
   --bg: #ffffff;
   --bg-alt: #ffffff;
   --surface: #ffffff;
-  --header-bg: #d9581f;
+  --header-bg: #d65f22;
   --header-rule: #ffffff;
 
   /* Type */
@@ -16,11 +16,11 @@
   --border-strong: #b7afa3;
 
   /* Brand */
-  --brand: #d9581f;
+  --brand: #d65f22;
   --brand-hover: #b74714;
   --brand-light: #f4b28f;
   --brand-soft: #fff5ef;
-  --accent: #d9581f;
+  --accent: #d65f22;
   --accent-light: #fff1e8;
 
   /* Shadows */
@@ -32,7 +32,23 @@
   --radius: 0;
   --radius-lg: 0;
   --max-w: 1180px;
-  --header-h: 108px;
+  --header-h: clamp(108px, 10.6875vw, 220px);
+}
+
+@font-face {
+  font-family: "WPCNA Impact";
+  src: url("../fonts/impact-subset.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "WPCNA Franklin Heavy";
+  src: url("../fonts/franklin-gothic-heavy-subset.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -133,23 +149,23 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 }
 
 .site-brand-stack {
-  flex: 0 0 clamp(19rem, 26vw, 22rem);
+  flex: 0 0 21.6875vw;
   align-self: stretch;
   display: flex;
   align-items: center;
-  padding: 0.85rem 1rem 0.85rem clamp(1rem, 1.7vw, 1.25rem);
-  border-right: 8px solid var(--header-rule);
+  padding: 0 clamp(1rem, 1.75vw, 2.25rem);
+  border-right: clamp(6px, 0.5625vw, 12px) solid var(--header-rule);
 }
 
 .brand-lockup {
   display: grid;
   gap: 0.02rem;
   color: #fff;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "WPCNA Impact", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 21pt;
   font-weight: 400;
   text-transform: none;
-  line-height: 1.02;
+  line-height: 1.2;
   letter-spacing: 0;
 }
 
@@ -165,7 +181,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   display: block;
   padding: 0.95rem 1rem;
   color: #fff;
-  font-family: "Franklin Gothic Heavy", "Franklin Gothic Demi", "Arial Black", sans-serif;
+  font-family: "WPCNA Franklin Heavy", "Franklin Gothic Heavy", "Franklin Gothic Demi", "Arial Black", sans-serif;
   font-size: 16pt;
   font-weight: 900;
   letter-spacing: 0;
@@ -489,7 +505,8 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 .image-hero {
   position: relative;
   min-height: 0;
-  aspect-ratio: 1008 / 548;
+  aspect-ratio: auto;
+  height: 53.5625vw;
   display: grid;
   align-items: end;
   overflow: hidden;
@@ -506,24 +523,49 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 
 .image-hero-label {
   position: absolute;
-  right: clamp(1rem, 3vw, 2rem);
-  bottom: clamp(1rem, 3vw, 2rem);
+  right: clamp(1rem, 3.25vw, 2.5rem);
+  bottom: clamp(1rem, 3.25vw, 2.5rem);
   z-index: 1;
-  max-width: min(28rem, calc(100% - 2rem));
+  width: max-content;
+  max-width: calc(100% - clamp(2rem, 6.5vw, 5rem));
   margin: 0;
-  padding: 0.7rem 1rem;
+  padding: 0.85rem clamp(1rem, 1.6vw, 1.35rem);
   background: var(--brand);
   color: #fff;
-  font-family: "Franklin Gothic Heavy", "Franklin Gothic Demi", "Arial Black", sans-serif;
+  font-family: "WPCNA Franklin Heavy", "Franklin Gothic Heavy", "Franklin Gothic Demi", "Arial Black", sans-serif;
   font-size: 16pt;
   font-weight: 900;
-  line-height: 1.08;
+  line-height: 1.1;
   letter-spacing: 0;
   text-align: left;
 }
 
+.image-hero-label span {
+  display: block;
+}
+
+.image-hero-home .image-hero-label {
+  right: 3.4375vw;
+  bottom: 6.375vw;
+  width: 42.9375vw;
+  min-height: 7.125vw;
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(0.9rem, 1.65vw, 2.2rem) clamp(1rem, 1.8vw, 2.4rem);
+  font-size: clamp(1rem, 1.52vw, 2rem);
+  line-height: 1.25;
+  text-align: center;
+}
+
+.image-hero-home .image-hero-label span {
+  white-space: nowrap;
+}
+
 .image-hero-home img {
-  object-position: center 26%;
+  object-position: center center;
 }
 
 .image-hero-events img {
@@ -2565,12 +2607,17 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   }
 
   .site-nav .nav-list {
-    display: grid;
-    grid-template-columns: repeat(8, minmax(0, 1fr));
+    display: flex;
+    justify-content: space-evenly;
     gap: 0;
     align-items: center;
     height: var(--header-h);
     width: 100%;
+  }
+
+  .site-nav li {
+    flex: 1 1 0;
+    min-width: 0;
   }
 
   .site-nav::before {
@@ -2583,9 +2630,9 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
     min-height: var(--header-h);
     align-items: center;
     justify-content: center;
-    padding: 0 0.35rem;
+    padding: 0 0.28rem;
     color: #fff;
-    font-size: 16pt;
+    font-size: clamp(1rem, 1.55vw, 2rem);
     line-height: 1.08;
     text-align: center;
   }
@@ -2616,6 +2663,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
     min-width: 0;
     max-width: calc(100% - 4.5rem);
     min-height: var(--header-h);
+    border-right: 0;
   }
 
   .brand-lockup {
@@ -2662,6 +2710,26 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 
   .image-hero {
     min-height: 0;
+  }
+
+  .image-hero-label {
+    right: 1rem;
+    bottom: 1rem;
+    max-width: calc(100% - 2rem);
+    padding: 0.8rem 1rem;
+    font-size: clamp(1rem, 4.2vw, 16pt);
+  }
+
+  .image-hero-home .image-hero-label {
+    right: 1rem;
+    bottom: 1rem;
+    width: calc(100% - 2rem);
+    min-height: 0;
+    padding: 0.9rem 1rem;
+  }
+
+  .image-hero-home .image-hero-label span {
+    white-space: normal;
   }
 
   .neighborhood-detail-hero {
