@@ -12,6 +12,12 @@ metaDescription: Explore White Plains through an interactive neighborhood map an
 
 <section class="section section-compact neighborhood-map-section" id="neighborhood-map">
   <div class="wrap">
+    <div class="neighborhood-map-heading">
+      <p class="eyebrow">Neighborhoods</p>
+      <h2>Neighborhood Associations</h2>
+      <p>Explore the neighborhood associations currently participating in WPCNA.</p>
+    </div>
+
     <div class="interactive-map-layout" data-neighborhood-map>
       <div class="interactive-map-panel">
         <div class="interactive-map-frame">
@@ -53,13 +59,12 @@ metaDescription: Explore White Plains through an interactive neighborhood map an
             {% endfor %}
           </svg>
         </div>
-        <p class="interactive-map-caption">Hover or tap one of the highlighted WPCNA-represented neighborhoods to connect the map and the guide cards.</p>
+        <p class="interactive-map-caption">Hover or tap a highlighted area to connect the map and association cards.</p>
       </div>
 
       <div class="interactive-map-sidebar">
         <div class="interactive-map-sidebar-intro">
-          <h2 class="neighborhood-map-title">Neighborhood Associations</h2>
-          <p class="neighborhood-map-subtitle">Associations currently participating in WPCNA.</p>
+          <h3 class="neighborhood-list-title">Participating Associations</h3>
         </div>
 
         <div class="map-tile-grid">
@@ -85,6 +90,9 @@ metaDescription: Explore White Plains through an interactive neighborhood map an
                 {% endif %}
                 <span class="map-tile-body map-tile-body-simple">
                   <strong>{{ neighborhood.name }}</strong>
+                  {% if neighborhood.detailUrl %}
+                    <span class="map-tile-link-label">View Profile</span>
+                  {% endif %}
                 </span>
               {% if neighborhood.detailUrl %}
                 </a>

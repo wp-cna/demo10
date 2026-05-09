@@ -12,7 +12,7 @@ const rawPostings = [
     locationName: "Fisher Hill Greenway Entrance",
     locationAddress: "45 Ridgeway Avenue, White Plains, NY 10605",
     shortSummary:
-      "Residents are invited to help remove litter, clear walking paths, and prepare planting beds along the Fisher Hill Greenway.",
+      "Help clear litter, open walking paths, and prepare planting beds along the Fisher Hill Greenway.",
     fullDescription:
       "The Fisher Hill Spring Cleanup Walk brings together residents and volunteers to help prepare neighborhood public spaces for the warmer months.\n\nParticipants may assist with litter removal, light landscaping, path clearing, and planting preparation along portions of the Fisher Hill Greenway.\n\nCleanup supplies and gloves will be available at the meeting area."
   },
@@ -46,7 +46,7 @@ const rawPostings = [
     locationName: "White Plains Public Library",
     locationAddress: "100 Martine Avenue, White Plains, NY 10601",
     shortSummary:
-      "City staff and neighborhood volunteers will discuss emergency alerts, cooling centers, severe weather response, and practical household preparedness.",
+      "City staff and volunteers will discuss emergency alerts, cooling centers, severe weather response, and household preparedness.",
     fullDescription:
       "Residents are invited to attend an informational evening focused on emergency preparedness and public safety resources available throughout White Plains.\n\nTopics include severe weather notifications, cooling center locations, emergency communications, and household preparedness recommendations.\n\nRepresentatives from the City and neighborhood organizations will answer questions following the presentation."
   },
@@ -80,7 +80,7 @@ const rawPostings = [
     locationName: "Turnure Park",
     locationAddress: "Lake Street & Turnure Park Entrance, White Plains, NY 10601",
     shortSummary:
-      "Neighbors are encouraged to bring blankets and picnic dinners for an informal evening of live acoustic music and family activities.",
+      "Bring blankets and picnic dinners for live acoustic music and family activities in Turnure Park.",
     fullDescription:
       "Residents and families are invited to gather for a relaxed community evening featuring acoustic music performances and outdoor picnic seating.\n\nThe event is intended as a casual neighborhood gathering and will include open lawn space for children and families.\n\nAttendees are encouraged to bring blankets or folding chairs."
   },
