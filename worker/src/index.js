@@ -1,6 +1,7 @@
 import contentIndex from "./content-index.js";
 import { createRetriever } from "./retrieval.js";
 import { FALLBACK_ANSWER, generateAnswer } from "./openai.js";
+import { handlePostingSubmission } from "./posting-review.js";
 
 const QUESTION_MAX_LENGTH = 500;
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
@@ -468,6 +469,7 @@ export default {
   async fetch(request, env) {
     const origin = request.headers.get("Origin") || "";
     const corsHeaders = buildCorsHeaders(origin, env);
+    const url = new URL(request.url);
 
     if (request.method === "OPTIONS") {
       return new Response(null, {
@@ -478,6 +480,16 @@ export default {
 
     if (origin && !corsHeaders) {
       return errorResponse("Origin not allowed.", 403);
+    }
+
+    if (url.pathname === "/posting-review" || url.pathname === "/api/posting-review") {
+      return handlePostingSubmission({
+        request,
+        env,
+        corsHeaders: corsHeaders || {},
+        jsonResponse,
+        errorResponse
+      });
     }
 
     if (request.method === "GET") {

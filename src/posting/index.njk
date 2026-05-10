@@ -70,13 +70,8 @@ eleventyExcludeFromCollections: true
       <p>Use this form to send community information to WPCNA. Submissions are reviewed before posting.</p>
       <p class="form-note">Your email address is used for follow-up and will not be published unless you specifically ask WPCNA to include it.</p>
 
-      <form class="contact-form" action="{{ site.contactFormAction }}" method="POST">
-        <input type="hidden" name="_subject" value="WPCNA community posting submission">
-        {% if site.contactFormCc %}
-          <input type="hidden" name="_cc" value="{{ site.contactFormCc }}">
-        {% endif %}
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="{{ site.baseUrl }}/posting/">
+      <form class="contact-form" action="{{ site.postingApiUrl }}" method="POST" data-posting-form data-posting-api="{{ site.postingApiUrl }}">
+        <input type="hidden" name="pageSource" value="{{ site.baseUrl }}/posting/">
         <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
         {# Honeypot hidden from real users; catches automated submissions. #}
@@ -104,6 +99,7 @@ eleventyExcludeFromCollections: true
           <textarea id="posting-message" name="message" rows="5" maxlength="240" required></textarea>
         </div>
 
+        <p class="form-status" data-posting-status hidden></p>
         <button class="btn btn-primary btn-block" type="submit" data-posting-submit>Send for review</button>
         <p class="form-note">Submitting an item does not guarantee posting.</p>
       </form>

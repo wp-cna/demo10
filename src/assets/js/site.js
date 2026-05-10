@@ -263,18 +263,21 @@ if (postingForm) {
   const messageField = postingForm.querySelector("#posting-message");
   const charHint = postingForm.querySelector("[data-char-count]");
   const maxLen = 240;
+  let updateCount = () => {};
 
   // Character counter
   if (messageField && charHint) {
-    const updateCount = () => {
+    updateCount = () => {
       const remaining = maxLen - messageField.value.length;
       charHint.textContent = `${remaining} character${remaining === 1 ? "" : "s"} left`;
       charHint.style.color = remaining < 20 ? "var(--accent)" : "";
     };
     messageField.addEventListener("input", updateCount);
+    updateCount();
   }
 
   const showStatus = (msg, isError) => {
+    if (!statusEl) return;
     statusEl.textContent = msg;
     statusEl.hidden = false;
     statusEl.className = "form-status " + (isError ? "form-status-error" : "form-status-success");
@@ -282,9 +285,11 @@ if (postingForm) {
 
   postingForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-    statusEl.hidden = true;
-    submitBtn.disabled = true;
-    submitBtn.textContent = "Sending\u2026";
+    if (statusEl) statusEl.hidden = true;
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending\u2026";
+    }
 
     const fd = new FormData(postingForm);
     const payload = {
@@ -293,30 +298,39 @@ if (postingForm) {
       subject: fd.get("subject"),
       message: fd.get("message"),
       website: fd.get("website"),
+      pageSource: fd.get("pageSource"),
     };
 
     try {
       const apiUrl = postingForm.dataset.postingApi;
+
+      if (!apiUrl) {
+        throw new Error("Missing posting API URL");
+      }
+
       const res = await fetch(apiUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
 
+      const data = await res.json().catch(() => ({}));
+
       if (res.ok) {
-        showStatus("Sent. WPCNA will review your submission.", false);
+        showStatus(data.message || "Sent. WPCNA will review your submission.", false);
         postingForm.reset();
-        if (charHint) charHint.textContent = maxLen + " characters";
+        updateCount();
       } else {
-        const data = await res.json().catch(() => ({}));
         showStatus(data.error || "Something went wrong. Please try again.", true);
       }
     } catch {
       showStatus("Could not reach the server. Please try again later.", true);
     }
 
-    submitBtn.disabled = false;
-    submitBtn.textContent = "Send for review";
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Send for review";
+    }
   });
 }
 

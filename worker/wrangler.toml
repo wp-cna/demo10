@@ -4,9 +4,15 @@ compatibility_date = "2026-04-21"
 
 # Secrets (set with `wrangler secret put`):
 #   OPENAI_API_KEY
+#   POSTING_RECIPIENT_EMAIL
+#   POSTING_EMAIL_WEBHOOK_URL
+# Optional email-provider secrets:
+#   RESEND_API_KEY
+#   POSTING_EMAIL_FROM
 
 [vars]
 AI_PROVIDER = "openai"
 OPENAI_MODEL = "gpt-5-mini"
+POSTING_REVIEW_MODEL = "gpt-5-mini"
 ALLOWED_ORIGINS = "https://wp-cna.github.io,https://never-nude.github.io"
 MAX_SOURCES = "6"
