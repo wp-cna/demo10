@@ -857,21 +857,21 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   margin-bottom: 1rem;
 }
 
-.represented-neighborhoods-intro p {
+.represented-neighborhoods-intro h3 {
   max-width: 34rem;
   margin: 0;
   padding-left: 0.04em;
   color: var(--ink);
-  font-family: "Arial Black", "WPCNA Franklin Heavy", "Franklin Gothic Heavy", "Franklin Gothic Demi", sans-serif;
-  font-size: clamp(1.35rem, 2vw, 1.85rem);
-  font-weight: 900;
-  line-height: 1.16;
+  font-family: "Inter Tight", "Inter", "Helvetica Neue", Arial, system-ui, sans-serif;
+  font-size: clamp(1.18rem, 1.55vw, 1.45rem);
+  font-weight: 740;
+  line-height: 1.18;
   letter-spacing: 0;
   text-wrap: balance;
   overflow: visible;
 }
 
-.represented-neighborhoods-intro p span {
+.represented-neighborhoods-intro h3 span {
   display: block;
 }
 
@@ -940,6 +940,18 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 
 .represented-placeholder-thumb span {
   padding: 0.4rem;
+}
+
+.represented-placeholder-thumb {
+  background: #fbf3ee;
+  color: rgba(180, 77, 27, 0.66);
+  font-size: 0.56rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+}
+
+.represented-placeholder-thumb span {
+  opacity: 0.76;
 }
 
 .represented-neighborhood-card strong {
