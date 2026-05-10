@@ -19,9 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SITE_BASE_URL: https://wp-cna.github.io
-      SITE_PATH_PREFIX: /demo1
-      CANONICAL_PATH_PREFIX: /demo1
+      SITE_PATH_PREFIX: /demo3
+      CANONICAL_PATH_PREFIX: /demo3
       ASK_WHITE_PLAINS_API_URL: ${{ vars.ASK_WHITE_PLAINS_API_URL }}
+      POSTING_API_URL: ${{ vars.POSTING_API_URL }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -64,6 +65,8 @@ jobs:
       - name: Configure Pages
         if: steps.changes.outputs.changed == 'true'
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload Pages artifact
         if: steps.changes.outputs.changed == 'true'

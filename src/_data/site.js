@@ -1,7 +1,7 @@
 const neighborhoodStore = require("./neighborhoodStore");
 
 const runtimePathPrefix = process.env.SITE_PATH_PREFIX || "/";
-const canonicalPathPrefix = process.env.CANONICAL_PATH_PREFIX || process.env.SITE_PATH_PREFIX || "/demo1";
+const canonicalPathPrefix = process.env.CANONICAL_PATH_PREFIX || process.env.SITE_PATH_PREFIX || "/demo3";
 const deployBaseUrl = process.env.SITE_BASE_URL || "https://wp-cna.github.io";
 const cleanCanonicalPrefix = canonicalPathPrefix === "/" ? "" : canonicalPathPrefix.replace(/\/$/, "");
 const homeHeroImage = "/assets/img/home/legacy-carousel/White-Plains.jpeg";
@@ -168,10 +168,10 @@ module.exports = {
   baseUrl: `${deployBaseUrl.replace(/\/$/, "")}${cleanCanonicalPrefix}`,
   pathPrefix: runtimePathPrefix,
   themeColor: "#d65f22",
-  assetVersion: "2026-05-09-demo1-2",
+  assetVersion: "2026-05-10-demo3-rule-review",
   contactName: "Michael Dalton, President",
   contactFormAction: "https://formsubmit.co/d3e6b1864b641c2a285418e86d7465c8",
-  contactFormCc: "michael@mdalton.com",
+  contactFormCc: "",
   contactFormSubject: "WPCNA website contact",
   askWhitePlainsApiUrl: process.env.ASK_WHITE_PLAINS_API_URL || "",
   // Posting form submits to a Cloudflare Worker; set POSTING_API_URL per deployment.
