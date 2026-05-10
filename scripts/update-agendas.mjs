@@ -12,7 +12,7 @@ const AGENDAS_PATH = path.join(ROOT, "src", "_data", "agendas.json");
 const CURRENT_URL = "https://wp-cna.org/agendas";
 const ARCHIVE_URL = "https://wp-cna.org/archived-agendas";
 const USER_AGENT =
-  "Mozilla/5.0 (compatible; WPCNAAgendaUpdater/1.0; +https://wp-cna.github.io/demo3/)";
+  "Mozilla/5.0 (compatible; WPCNAAgendaUpdater/1.0; +https://wp-cna.github.io/demo4/)";
 const DEFAULT_INTRO =
   "WPCNA meets monthly (typically the second Tuesday at 7:00 p.m.). Meeting minutes from each session are posted here as they become available.";
 

@@ -11,7 +11,7 @@ const AUTO_EVENTS_PATH = path.join(ROOT, "src", "_data", "events.auto.json");
 
 const TIME_ZONE = "America/New_York";
 const USER_AGENT =
-  "Mozilla/5.0 (compatible; WPCNAEventUpdater/1.0; +https://wp-cna.github.io/demo3/)";
+  "Mozilla/5.0 (compatible; WPCNAEventUpdater/1.0; +https://wp-cna.github.io/demo4/)";
 const LIBRARY_LOOKAHEAD_DAYS = 45;
 const CITY_MONTHS_AHEAD = 6;
 const PAST_RETENTION_DAYS = 60;

@@ -111,29 +111,20 @@ metaDescription: Explore White Plains through an interactive neighborhood map an
   </div>
 </section>
 
-<section class="section" id="neighborhood-areas">
+<section class="section neighborhood-directory-section" id="neighborhood-areas">
   <div class="wrap">
-    <div class="section-header">
+    <div class="section-header neighborhood-directory-header">
       <div>
-        <p class="eyebrow">Neighborhood Areas</p>
-        <h2>Neighborhoods grouped by area</h2>
-        <p>These neighborhood areas match the updated White Plains map. Fisher Hill is currently populated; other profiles are being normalized.</p>
+        <p class="eyebrow">Directory</p>
+        <h2>All Neighborhoods</h2>
+        <p>An alphabetical guide to White Plains neighborhoods and association profile pages.</p>
       </div>
     </div>
 
-    {% for group in neighborhoodStore.guideGroups %}
-      <section class="neighborhood-group" id="{{ group.slug }}">
-        <div class="neighborhood-group-intro">
-          <p class="eyebrow">{{ group.name }}</p>
-          <h2>{{ group.name }}</h2>
-          <p>{{ group.description }}</p>
-        </div>
-        <div class="neighborhood-grid">
-          {% for neighborhood in group.neighborhoods %}
-            {{ neighborhoodCard(neighborhood, true, true) }}
-          {% endfor %}
-        </div>
-      </section>
-    {% endfor %}
+    <div class="neighborhood-grid neighborhood-directory-grid">
+      {% for neighborhood in neighborhoodStore.allAlphabetical %}
+        {{ neighborhoodCard(neighborhood, true, true) }}
+      {% endfor %}
+    </div>
   </div>
 </section>

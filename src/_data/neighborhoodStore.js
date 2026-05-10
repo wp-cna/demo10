@@ -235,6 +235,8 @@ const bySlug = Object.fromEntries(all.map((neighborhood) => [neighborhood.slug, 
 const guideAll = all
   .filter((neighborhood) => mapGuideSlugs.has(neighborhood.slug))
   .filter((neighborhood) => !mapDrawingSlugs.has(neighborhood.slug));
+const allAlphabetical = [...all].sort((a, b) => a.name.localeCompare(b.name));
+const guideAllAlphabetical = [...guideAll].sort((a, b) => a.name.localeCompare(b.name));
 const guideGroups = groups
   .map((group) => ({
     ...group,
@@ -251,6 +253,8 @@ module.exports = {
   groups,
   guideCount: guideAll.length,
   guideAll,
+  allAlphabetical,
+  guideAllAlphabetical,
   guideGroups,
   removedFromMapGuide,
   bySlug
