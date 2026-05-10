@@ -190,11 +190,27 @@ function emailSubject(subject = "") {
   return `Community Posting Review: ${cleanSubject}`;
 }
 
+function parseEmailList(value = "") {
+  return String(value || "")
+    .split(",")
+    .map((email) => normalizeEmail(email))
+    .filter((email) => email && isEmail(email));
+}
+
+function postingRecipients(env) {
+  const recipients = [
+    ...parseEmailList(env.POSTING_RECIPIENT_EMAILS),
+    ...parseEmailList(env.POSTING_RECIPIENT_EMAIL)
+  ];
+
+  return [...new Set(recipients)];
+}
+
 async function sendViaResend({ env, subject, body, replyTo }) {
   const from = env.POSTING_EMAIL_FROM || "WPCNA <onboarding@resend.dev>";
-  const recipient = env.POSTING_RECIPIENT_EMAIL;
+  const recipients = postingRecipients(env);
 
-  if (!env.RESEND_API_KEY || !recipient) {
+  if (!env.RESEND_API_KEY || !recipients.length) {
     return false;
   }
 
@@ -206,7 +222,7 @@ async function sendViaResend({ env, subject, body, replyTo }) {
     },
     body: JSON.stringify({
       from,
-      to: [recipient],
+      to: recipients,
       subject,
       text: body,
       reply_to: replyTo ? [replyTo] : undefined
@@ -234,6 +250,10 @@ async function sendViaWebhook({ env, subject, body, replyTo }) {
   payload.set("_captcha", "false");
   if (replyTo) {
     payload.set("_replyto", replyTo);
+  }
+  const cc = parseEmailList(env.POSTING_CC_EMAILS).join(",");
+  if (cc) {
+    payload.set("_cc", cc);
   }
   payload.set("AI and submission review", body);
 

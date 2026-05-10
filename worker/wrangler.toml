@@ -5,7 +5,9 @@ compatibility_date = "2026-04-21"
 # Secrets (set with `wrangler secret put`):
 #   OPENAI_API_KEY
 #   POSTING_RECIPIENT_EMAIL
+#   POSTING_RECIPIENT_EMAILS
 #   POSTING_EMAIL_WEBHOOK_URL
+#   POSTING_CC_EMAILS
 # Optional email-provider secrets:
 #   RESEND_API_KEY
 #   POSTING_EMAIL_FROM
