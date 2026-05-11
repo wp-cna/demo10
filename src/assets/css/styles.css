@@ -564,16 +564,16 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   --home-hero-label-right: 3.4375vw;
   right: calc(var(--home-hero-label-right) + 1.25rem);
   bottom: 6.375vw;
-  width: min(55vw, 49.5rem);
+  width: min(33vw, 49.5rem);
   min-height: 0;
-  max-width: calc(100% - var(--home-hero-label-right) - 3.25rem);
+  max-width: min(33vw, calc(100% - var(--home-hero-label-right) - 3.25rem));
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: clamp(0.68rem, 1vw, 1.2rem) clamp(0.72rem, 1vw, 1.1rem);
   font-family: "WPCNA Franklin Heavy", "Franklin Gothic Heavy", "Franklin Gothic Demi", "Arial Black", sans-serif;
-  font-size: clamp(18pt, 1.45vw, 22pt);
+  font-size: clamp(13pt, 1.2vw, 20pt);
   line-height: 1.25;
   text-align: center;
 }
@@ -2945,7 +2945,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   }
 
   .image-hero-label {
-    right: 0;
+    right: clamp(0.5rem, 1.6vw, 0.85rem);
     bottom: 0.85rem;
     max-width: min(58vw, 20rem);
     padding: 0.48rem 0.6rem;
@@ -3020,7 +3020,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   }
 
   .image-hero-label {
-    right: 0;
+    right: 0.55rem;
     bottom: 0.72rem;
     max-width: min(56vw, 15.5rem);
     padding: 0.4rem 0.52rem;
