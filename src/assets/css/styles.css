@@ -2945,24 +2945,27 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   }
 
   .image-hero-label {
-    right: 1rem;
-    bottom: 1rem;
-    max-width: min(78vw, 30rem);
-    padding: 0.62rem 0.78rem;
-    font-size: clamp(1.85rem, 7vw, 2.35rem);
+    right: 0;
+    bottom: 0.85rem;
+    max-width: min(58vw, 20rem);
+    padding: 0.48rem 0.6rem;
+    font-size: clamp(1.32rem, 5.2vw, 1.9rem);
+    line-height: 1.06;
     overflow-wrap: normal;
     word-break: normal;
   }
 
   .image-hero-home .image-hero-label {
-    right: 1rem;
+    right: auto;
+    left: 50%;
     bottom: 1rem;
-    width: min(82vw, calc(100% - 2rem));
-    max-width: min(82vw, calc(100% - 2rem));
+    width: min(68vw, 23rem);
+    max-width: calc(100% - 2.25rem);
     min-height: 0;
-    padding: 0.58rem 0.68rem;
-    font-size: clamp(0.84rem, 3.15vw, 1.12rem);
-    line-height: 1.15;
+    padding: 0.48rem 0.58rem;
+    font-size: clamp(0.72rem, 2.75vw, 0.98rem);
+    line-height: 1.16;
+    transform: translateX(-50%);
   }
 
   .image-hero-home .image-hero-label span {
@@ -3014,6 +3017,27 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   .map-tile-grid { grid-template-columns: 1fr; }
   .image-hero {
     min-height: 0;
+  }
+
+  .image-hero-label {
+    right: 0;
+    bottom: 0.72rem;
+    max-width: min(56vw, 15.5rem);
+    padding: 0.4rem 0.52rem;
+    font-size: clamp(1.12rem, 5.15vw, 1.55rem);
+    line-height: 1.06;
+  }
+
+  .image-hero-home .image-hero-label {
+    right: auto;
+    left: 50%;
+    bottom: 1rem;
+    width: min(65vw, 20rem);
+    max-width: calc(100% - 2.5rem);
+    padding: 0.42rem 0.5rem;
+    font-size: clamp(0.66rem, 2.65vw, 0.84rem);
+    line-height: 1.16;
+    transform: translateX(-50%);
   }
 
   .neighborhood-detail-hero {

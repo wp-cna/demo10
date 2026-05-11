@@ -1,7 +1,7 @@
 const neighborhoodStore = require("./neighborhoodStore");
 
 const runtimePathPrefix = process.env.SITE_PATH_PREFIX || "/";
-const canonicalPathPrefix = process.env.CANONICAL_PATH_PREFIX || process.env.SITE_PATH_PREFIX || "/demo4";
+const canonicalPathPrefix = process.env.CANONICAL_PATH_PREFIX || process.env.SITE_PATH_PREFIX || "/demo6";
 const deployBaseUrl = process.env.SITE_BASE_URL || "https://wp-cna.github.io";
 const cleanCanonicalPrefix = canonicalPathPrefix === "/" ? "" : canonicalPathPrefix.replace(/\/$/, "");
 const homeHeroImage = "/assets/img/home/legacy-carousel/White-Plains.jpeg";
@@ -168,7 +168,7 @@ module.exports = {
   baseUrl: `${deployBaseUrl.replace(/\/$/, "")}${cleanCanonicalPrefix}`,
   pathPrefix: runtimePathPrefix,
   themeColor: "#d65f22",
-  assetVersion: "2026-05-10-demo4-visual-refine",
+  assetVersion: "2026-05-11-demo6-mobile-hero-labels",
   contactName: "Michael Dalton, President",
   contactFormAction: "https://formsubmit.co/d3e6b1864b641c2a285418e86d7465c8",
   contactFormCc: "",
