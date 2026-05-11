@@ -526,6 +526,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 .image-hero img {
   position: absolute;
   inset: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -535,7 +536,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   position: absolute;
   right: clamp(1.5rem, 4vw, 3.15rem);
   bottom: clamp(1.9rem, 5.4vw, 4.1rem);
-  z-index: 1;
+  z-index: 2;
   width: fit-content;
   max-width: calc(50% - clamp(1.5rem, 4vw, 3.15rem));
   margin: 0;
@@ -561,24 +562,24 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 
 .image-hero-home .image-hero-label {
   --home-hero-label-right: 3.4375vw;
-  right: var(--home-hero-label-right);
+  right: calc(var(--home-hero-label-right) + 1.25rem);
   bottom: 6.375vw;
-  width: min(33vw, 34rem);
+  width: min(55vw, 49.5rem);
   min-height: 0;
-  max-width: calc(100% - var(--home-hero-label-right) - 1rem);
+  max-width: calc(100% - var(--home-hero-label-right) - 3.25rem);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: clamp(0.75rem, 1.15vw, 1.4rem) clamp(0.85rem, 1.25vw, 1.5rem);
+  padding: clamp(0.68rem, 1vw, 1.2rem) clamp(0.72rem, 1vw, 1.1rem);
   font-family: "WPCNA Franklin Heavy", "Franklin Gothic Heavy", "Franklin Gothic Demi", "Arial Black", sans-serif;
-  font-size: clamp(20pt, 1.7vw, 24pt);
+  font-size: clamp(18pt, 1.45vw, 22pt);
   line-height: 1.25;
   text-align: center;
 }
 
 .image-hero-home .image-hero-label span {
-  white-space: normal;
+  white-space: nowrap;
   width: 100%;
   min-width: 0;
   max-width: 100%;
@@ -586,7 +587,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 
 @media (min-width: 1350px) {
   .image-hero-home .image-hero-label span {
-    white-space: normal;
+    white-space: nowrap;
   }
 }
 
@@ -966,6 +967,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   display: block;
   padding-right: 0.85rem;
   font-size: 1rem;
+  letter-spacing: 0.012em;
   line-height: 1.2;
 }
 
@@ -1107,6 +1109,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 .association-block h2 {
   margin: 0 0 0.75rem;
   font-size: 1.15rem;
+  letter-spacing: 0.012em;
 }
 
 .association-block h2 span {
@@ -1527,6 +1530,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   margin-bottom: 0.3rem;
   color: var(--ink);
   font-size: clamp(1.18rem, 1.9vw, 1.5rem);
+  letter-spacing: 0.012em;
 }
 
 .neighborhood-card-teaser {
@@ -2594,6 +2598,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
 .map-tile-body strong {
   font-size: 1.08rem;
   font-weight: 690;
+  letter-spacing: 0.012em;
   line-height: 1.22;
 }
 
