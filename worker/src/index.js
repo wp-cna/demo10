@@ -149,7 +149,7 @@ function cleanAnswer(answer) {
 
 function scopeAnswer() {
   return [
-    "Hi. Ask about neighborhoods, White Plains history already covered on the site, WPCNA, agendas, events, community posting, the CNA Workshop Handbook, and local resources.",
+    "Hi. Ask about neighborhoods, White Plains history already covered on the site, WPCNA, agendas, events, community posting, Join the CNA, and local resources.",
     "Try something like: What does WPCNA do? What history does the site cover about White Plains? Where can I find agendas?"
   ].join("\n\n");
 }
