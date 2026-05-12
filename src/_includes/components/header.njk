@@ -33,7 +33,7 @@
             {% set isCurrent = page.url == item.url or (item.url != "/" and page.url.startsWith(item.url)) %}
           {% endif %}
           <li>
-            <a href="{{ item.url | withPrefix }}"{% if isCurrent %} aria-current="page"{% endif %}>{{ item.label }}</a>
+            <a href="{{ item.url | withPrefix }}" data-nav-id="{{ item.id }}"{% if isCurrent %} aria-current="page"{% endif %}>{{ item.label }}</a>
           </li>
         {% endfor %}
       </ul>
