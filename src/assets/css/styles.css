@@ -560,35 +560,48 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   display: block;
 }
 
+@media (min-width: 1200px) {
+  .image-hero-neighborhoods .image-hero-label,
+  .image-hero-events .image-hero-label,
+  .image-hero-posting .image-hero-label,
+  .image-hero-agendas .image-hero-label,
+  .image-hero-handbook .image-hero-label,
+  .image-hero-about .image-hero-label {
+    padding: clamp(0.85rem, 1.36vw, 1.19rem) clamp(1.1rem, 1.7vw, 1.53rem);
+    font-size: clamp(35.7pt, 2.98vw, 40.8pt);
+  }
+}
+
 .image-hero-home .image-hero-label {
   --home-hero-label-right: 3.4375vw;
   right: calc(var(--home-hero-label-right) + 1.25rem);
   bottom: 6.375vw;
-  width: min(33vw, 49.5rem);
+  width: max-content;
   min-height: 0;
-  max-width: min(33vw, calc(100% - var(--home-hero-label-right) - 3.25rem));
+  max-width: min(37vw, calc(100% - var(--home-hero-label-right) - 3.25rem));
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: clamp(0.68rem, 1vw, 1.2rem) clamp(0.72rem, 1vw, 1.1rem);
+  padding: clamp(0.48rem, 0.82vw, 0.9rem) clamp(0.6rem, 0.9vw, 0.95rem);
   font-family: "WPCNA Franklin Heavy", "Franklin Gothic Heavy", "Franklin Gothic Demi", "Arial Black", sans-serif;
-  font-size: clamp(22pt, 2.05vw, 34pt);
+  font-size: clamp(20pt, 1.55vw, 30pt);
   line-height: 1.1;
   text-align: center;
 }
 
-.image-hero-home .image-hero-label span {
-  white-space: normal;
-  width: 100%;
+.image-hero-home .home-label-desktop-lines {
+  display: block;
   min-width: 0;
   max-width: 100%;
 }
 
-@media (min-width: 1350px) {
-  .image-hero-home .image-hero-label span {
-    white-space: normal;
-  }
+.image-hero-home .home-label-desktop-lines span {
+  white-space: nowrap;
+}
+
+.image-hero-home .home-label-mobile-copy {
+  display: none;
 }
 
 .image-hero-home img {
@@ -2972,6 +2985,14 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
     white-space: normal;
   }
 
+  .image-hero-home .home-label-desktop-lines {
+    display: none;
+  }
+
+  .image-hero-home .home-label-mobile-copy {
+    display: block;
+  }
+
   .neighborhood-detail-hero {
     min-height: 0;
   }
@@ -3038,6 +3059,14 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
     font-size: clamp(0.66rem, 2.65vw, 0.84rem);
     line-height: 1.16;
     transform: translateX(-50%);
+  }
+
+  .image-hero-home .home-label-desktop-lines {
+    display: none;
+  }
+
+  .image-hero-home .home-label-mobile-copy {
+    display: block;
   }
 
   .neighborhood-detail-hero {
