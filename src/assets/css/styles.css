@@ -2958,7 +2958,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   }
 
   .image-hero-label {
-    right: clamp(0.5rem, 1.6vw, 0.85rem);
+    right: clamp(0.65rem, 2vw, 1rem);
     bottom: 0.85rem;
     max-width: min(58vw, 20rem);
     padding: 0.48rem 0.6rem;
@@ -2969,16 +2969,22 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   }
 
   .image-hero-home .image-hero-label {
-    right: auto;
-    left: 50%;
+    right: clamp(0.75rem, 2.25vw, 1.1rem);
+    left: auto;
     bottom: 1rem;
     width: min(68vw, 23rem);
-    max-width: calc(100% - 2.25rem);
+    max-width: calc(100% - 2rem);
     min-height: 0;
     padding: 0.48rem 0.58rem;
     font-size: clamp(0.72rem, 2.75vw, 0.98rem);
     line-height: 1.16;
-    transform: translateX(-50%);
+    transform: none;
+  }
+
+  .image-hero-handbook .image-hero-label {
+    max-width: min(54vw, 15rem);
+    padding-right: 0.46rem;
+    text-wrap: auto;
   }
 
   .image-hero-home .image-hero-label span {
@@ -3041,7 +3047,7 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   }
 
   .image-hero-label {
-    right: 0.55rem;
+    right: 0.7rem;
     bottom: 0.72rem;
     max-width: min(56vw, 15.5rem);
     padding: 0.4rem 0.52rem;
@@ -3050,15 +3056,21 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   }
 
   .image-hero-home .image-hero-label {
-    right: auto;
-    left: 50%;
+    right: 0.7rem;
+    left: auto;
     bottom: 1rem;
     width: min(65vw, 20rem);
-    max-width: calc(100% - 2.5rem);
+    max-width: calc(100% - 1.4rem);
     padding: 0.42rem 0.5rem;
     font-size: clamp(0.66rem, 2.65vw, 0.84rem);
     line-height: 1.16;
-    transform: translateX(-50%);
+    transform: none;
+  }
+
+  .image-hero-handbook .image-hero-label {
+    max-width: min(56vw, 14.5rem);
+    padding-right: 0.42rem;
+    text-wrap: auto;
   }
 
   .image-hero-home .home-label-desktop-lines {
