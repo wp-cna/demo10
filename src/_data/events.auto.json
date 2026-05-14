@@ -3007,6 +3007,33 @@
     "importSource": "library"
   },
   {
+    "id": "city-westchester-county-rent-guideline-board-research-and-analysis-presentation-2026-06-02",
+    "slug": "city-westchester-county-rent-guideline-board-research-and-analysis-presentation-2026-06-02",
+    "title": "Westchester County Rent Guideline Board - Research & Analysis Presentation",
+    "category": "Civic",
+    "shortSummary": "Westchester County Rent Guideline Board - Research & Analysis Presentation is listed on the official White Plains city calendar.",
+    "fullDescription": "Westchester County Rent Guideline Board - Research & Analysis Presentation is listed on the official White Plains city calendar. It is set for For the WRGB to receive a presentation of the DHCR Research & analysis Unit of the tabulations of data based upon responses of ETPA owners to the annual survey., White Plains, NY. Use the official city page for agendas, updates, and any location changes.",
+    "startDate": "2026-06-02",
+    "endDate": "2026-06-02",
+    "startTime": "18:00",
+    "endTime": "19:30",
+    "locationName": "For the WRGB to receive a presentation of the DHCR Research & analysis Unit of the tabulations of data based upon responses of ETPA owners to the annual survey.",
+    "locationAddress": "White Plains, NY",
+    "image": "/assets/img/events/civic.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4334&month=6&year=2026&day=2&calType=0",
+    "ctaLabel": "Open city page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "city calendar"
+    ],
+    "organizer": "City of White Plains",
+    "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4334&month=6&year=2026&day=2&calType=0",
+    "sourceLabel": "City calendar",
+    "importSource": "city"
+  },
+  {
     "id": "library-virtual-poetry-open-mic-2026-06-03",
     "slug": "library-virtual-poetry-open-mic-2026-06-03",
     "title": "Virtual Poetry Open Mic",
@@ -4002,6 +4029,34 @@
     "sourceUrl": "https://calendar.whiteplainslibrary.org/event/14610202",
     "sourceLabel": "Library calendar",
     "importSource": "library"
+  },
+  {
+    "id": "city-westchester-county-rent-guideline-board-rebuttal-and-vote-meeting-2026-06-22",
+    "slug": "city-westchester-county-rent-guideline-board-rebuttal-and-vote-meeting-2026-06-22",
+    "title": "Westchester County Rent Guideline Board - Rebuttal and Vote meeting",
+    "category": "Civic",
+    "shortSummary": "Westchester County Rent Guideline Board - Rebuttal and Vote meeting is listed on the official White Plains city calendar.",
+    "fullDescription": "Westchester County Rent Guideline Board - Rebuttal and Vote meeting is listed on the official White Plains city calendar. It is set for For the rebuttal presentations of the Tenant and Owner representatives. Also, to vote on rent guidelines for leases commencing between October 1, 2026 and September 30, 2027, as well as finalization and adoption of the Explanatory Statement, White Plains, NY. Use the official city page for agendas, updates, and any location changes.",
+    "startDate": "2026-06-22",
+    "endDate": "2026-06-22",
+    "startTime": "19:00",
+    "endTime": "21:00",
+    "locationName": "For the rebuttal presentations of the Tenant and Owner representatives. Also, to vote on rent guidelines for leases commencing between October 1, 2026 and September 30, 2027, as well as finalization and adoption of the Explanatory Statement",
+    "locationAddress": "White Plains, NY",
+    "image": "/assets/img/events/civic.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4335&month=6&year=2026&day=22&calType=0",
+    "ctaLabel": "Open city page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "city calendar",
+      "public meeting"
+    ],
+    "organizer": "City of White Plains",
+    "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4335&month=6&year=2026&day=22&calType=0",
+    "sourceLabel": "City calendar",
+    "importSource": "city"
   },
   {
     "id": "city-music-at-the-market-2026-06-24",
