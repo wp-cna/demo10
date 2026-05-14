@@ -1763,6 +1763,15 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   color: var(--ink);
 }
 
+.form-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
 .form-field input,
 .form-field select,
 .form-field textarea {
@@ -1810,6 +1819,111 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   font-size: 0.82rem;
   color: var(--ink-muted);
   margin-left: 0.25rem;
+}
+
+.field-help {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.form-section {
+  display: grid;
+  gap: 0.9rem;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--brand-soft) 28%, var(--surface));
+}
+
+.form-section legend {
+  padding: 0 0.42rem;
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.form-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.form-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.form-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.form-grid-span {
+  grid-column: 1 / -1;
+}
+
+.choice-grid,
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.choice-grid-inline {
+  grid-template-columns: repeat(2, minmax(5.5rem, 1fr));
+  max-width: 16rem;
+}
+
+.choice-grid label,
+.checkbox-grid label,
+.form-confirmation label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.65rem;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.64);
+  color: var(--ink-secondary);
+  font-size: 0.93rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.choice-grid input,
+.checkbox-grid input,
+.form-confirmation input {
+  width: auto;
+  flex: 0 0 auto;
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+.form-confirmation {
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--border);
+  background: var(--brand-soft);
+}
+
+.form-confirmation label {
+  align-items: flex-start;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.form-confirmation input {
+  margin-top: 0.2rem;
+}
+
+.form-example {
+  padding: 0.6rem 0.7rem;
+  border-left: 3px solid color-mix(in srgb, var(--brand) 55%, var(--border));
+  background: rgba(255,255,255,0.7);
 }
 
 .sidebar-card dl {
@@ -2833,6 +2947,16 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
   .represented-neighborhoods-layout { grid-template-columns: 1fr; }
   .represented-map-panel { position: static; }
   .represented-modal-layout-media { grid-template-columns: 1fr; }
+  .form-grid-2,
+  .form-grid-3,
+  .choice-grid,
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .choice-grid-inline {
+    grid-template-columns: repeat(2, minmax(0, max-content));
+  }
 }
 
 @media (min-width: 1200px) {
@@ -3065,6 +3189,10 @@ h3 { font-size: clamp(1.12rem, 1.8vw, 1.38rem); }
     font-size: clamp(0.66rem, 2.65vw, 0.84rem);
     line-height: 1.16;
     transform: none;
+  }
+
+  .form-section {
+    padding: 0.9rem;
   }
 
   .image-hero-handbook .image-hero-label {

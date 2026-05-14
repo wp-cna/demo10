@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/posting-review.js": {
+      "maxDuration": 30
+    }
+  }
+}

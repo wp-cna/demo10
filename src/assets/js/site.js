@@ -262,7 +262,7 @@ if (postingForm) {
   const submitBtn = postingForm.querySelector("[data-posting-submit]");
   const messageField = postingForm.querySelector("#posting-message");
   const charHint = postingForm.querySelector("[data-char-count]");
-  const maxLen = 240;
+  const maxLen = messageField && messageField.maxLength > 0 ? messageField.maxLength : 900;
   let updateCount = () => {};
 
   // Character counter
@@ -288,15 +288,33 @@ if (postingForm) {
     if (statusEl) statusEl.hidden = true;
     if (submitBtn) {
       submitBtn.disabled = true;
-      submitBtn.textContent = "Sending\u2026";
+      submitBtn.textContent = "Submitting\u2026";
     }
 
     const fd = new FormData(postingForm);
     const payload = {
+      title: fd.get("subject"),
       name: fd.get("name"),
+      contactName: fd.get("name"),
       email: fd.get("email"),
+      contactEmail: fd.get("email"),
       subject: fd.get("subject"),
+      category: fd.get("category"),
+      postingType: fd.get("postingType"),
+      organization: fd.get("organization"),
+      organizationName: fd.get("organization"),
+      eventDate: fd.get("eventDate"),
+      eventTime: fd.get("eventTime"),
+      location: fd.get("location"),
+      audience: fd.getAll("audience"),
+      intendedAudience: fd.getAll("audience"),
+      whitePlainsAffiliation: fd.get("whitePlainsAffiliation"),
+      fundraising: fd.get("fundraising"),
+      linksIncluded: fd.get("linksIncluded"),
+      guidelinesConfirmed: fd.get("guidelinesConfirmed"),
       message: fd.get("message"),
+      description: fd.get("message"),
+      _honey: fd.get("_honey"),
       website: fd.get("website"),
       pageSource: fd.get("pageSource"),
     };
@@ -308,6 +326,9 @@ if (postingForm) {
         throw new Error("Missing posting API URL");
       }
 
+      if (submitBtn) submitBtn.textContent = "Reviewing submission\u2026";
+      showStatus("Reviewing submission\u2026", false);
+
       const res = await fetch(apiUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -317,7 +338,7 @@ if (postingForm) {
       const data = await res.json().catch(() => ({}));
 
       if (res.ok) {
-        showStatus(data.message || "Sent. WPCNA will review your submission.", false);
+        showStatus(data.message || "Thank you. Your submission has been received and is being reviewed by WPCNA.", false);
         postingForm.reset();
         updateCount();
       } else {

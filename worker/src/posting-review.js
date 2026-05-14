@@ -3,9 +3,42 @@ const POSTING_RATE_LIMIT_MAX = 5;
 const POSTING_MAX_LENGTHS = {
   name: 120,
   email: 254,
-  subject: 200,
+  subject: 160,
+  category: 80,
+  postingType: 80,
+  organization: 140,
+  eventDate: 40,
+  eventTime: 40,
+  location: 180,
+  audience: 500,
+  whitePlainsAffiliation: 160,
+  fundraising: 12,
+  linksIncluded: 12,
+  guidelinesConfirmed: 12,
   message: 4000,
   website: 500
+};
+const REQUIRED_POSTING_FIELDS = [
+  "name",
+  "email",
+  "subject",
+  "category",
+  "postingType",
+  "whitePlainsAffiliation",
+  "fundraising",
+  "linksIncluded",
+  "message"
+];
+const POSTING_FIELD_LABELS = {
+  name: "Contact name",
+  email: "Contact email",
+  subject: "Posting/event title",
+  category: "Submission category",
+  postingType: "Posting type",
+  whitePlainsAffiliation: "White Plains affiliation",
+  fundraising: "Fundraising",
+  linksIncluded: "Links included",
+  message: "Main description"
 };
 const postingRateLimitStore = new Map();
 
@@ -137,6 +170,14 @@ function rawText(value = "", maxLength = 4000) {
     .slice(0, maxLength);
 }
 
+function normalizeList(value = [], maxLength = 500) {
+  const values = Array.isArray(value) ? value : String(value || "").split(",");
+  return values
+    .map((item) => normalizeText(item, maxLength))
+    .filter(Boolean)
+    .slice(0, 12);
+}
+
 function safeEmailText(value = "", maxLength = 4000) {
   return rawText(value, maxLength)
     .replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g, "")
@@ -178,20 +219,34 @@ function isPostingRateLimited(ipAddress) {
 async function parseSubmissionRequest(request) {
   const contentType = request.headers.get("Content-Type") || "";
   let body = {};
+  let audience = [];
 
   if (contentType.includes("application/json")) {
     body = await request.json();
+    audience = Array.isArray(body.audience) ? body.audience : body.audience || [];
   } else {
     const formData = await request.formData();
     body = Object.fromEntries(formData.entries());
+    audience = formData.getAll("audience");
   }
 
   const raw = {
     name: rawText(body.name, POSTING_MAX_LENGTHS.name),
     email: rawText(body.email, POSTING_MAX_LENGTHS.email),
     subject: rawText(body.subject, POSTING_MAX_LENGTHS.subject),
+    category: rawText(body.category, POSTING_MAX_LENGTHS.category),
+    postingType: rawText(body.postingType, POSTING_MAX_LENGTHS.postingType),
+    organization: rawText(body.organization, POSTING_MAX_LENGTHS.organization),
+    eventDate: rawText(body.eventDate, POSTING_MAX_LENGTHS.eventDate),
+    eventTime: rawText(body.eventTime, POSTING_MAX_LENGTHS.eventTime),
+    location: rawText(body.location, POSTING_MAX_LENGTHS.location),
+    audience: normalizeList(audience, POSTING_MAX_LENGTHS.audience),
+    whitePlainsAffiliation: rawText(body.whitePlainsAffiliation, POSTING_MAX_LENGTHS.whitePlainsAffiliation),
+    fundraising: rawText(body.fundraising, POSTING_MAX_LENGTHS.fundraising),
+    linksIncluded: rawText(body.linksIncluded, POSTING_MAX_LENGTHS.linksIncluded),
+    guidelinesConfirmed: rawText(body.guidelinesConfirmed, POSTING_MAX_LENGTHS.guidelinesConfirmed),
     message: rawText(body.message, POSTING_MAX_LENGTHS.message),
-    website: rawText(body.website, POSTING_MAX_LENGTHS.website),
+    website: rawText(body.website || body._honey, POSTING_MAX_LENGTHS.website),
     pageSource: rawText(body.pageSource || request.headers.get("Referer") || "", 500)
   };
 
@@ -199,6 +254,17 @@ async function parseSubmissionRequest(request) {
     name: normalizeText(raw.name, POSTING_MAX_LENGTHS.name),
     email: normalizeEmail(raw.email),
     subject: normalizeText(raw.subject, POSTING_MAX_LENGTHS.subject),
+    category: normalizeText(raw.category, POSTING_MAX_LENGTHS.category),
+    postingType: normalizeText(raw.postingType, POSTING_MAX_LENGTHS.postingType),
+    organization: normalizeText(raw.organization, POSTING_MAX_LENGTHS.organization),
+    eventDate: normalizeText(raw.eventDate, POSTING_MAX_LENGTHS.eventDate),
+    eventTime: normalizeText(raw.eventTime, POSTING_MAX_LENGTHS.eventTime),
+    location: normalizeText(raw.location, POSTING_MAX_LENGTHS.location),
+    audience: normalizeList(raw.audience, POSTING_MAX_LENGTHS.audience),
+    whitePlainsAffiliation: normalizeText(raw.whitePlainsAffiliation, POSTING_MAX_LENGTHS.whitePlainsAffiliation),
+    fundraising: normalizeText(raw.fundraising, POSTING_MAX_LENGTHS.fundraising),
+    linksIncluded: normalizeText(raw.linksIncluded, POSTING_MAX_LENGTHS.linksIncluded),
+    guidelinesConfirmed: normalizeText(raw.guidelinesConfirmed, POSTING_MAX_LENGTHS.guidelinesConfirmed).toLowerCase(),
     message: normalizeText(raw.message, POSTING_MAX_LENGTHS.message),
     website: normalizeText(raw.website, POSTING_MAX_LENGTHS.website),
     pageSource: normalizeText(raw.pageSource, 500)
@@ -208,17 +274,21 @@ async function parseSubmissionRequest(request) {
 }
 
 function validateSubmission(submission) {
-  const missing = ["name", "email", "subject", "message"].filter((field) => !submission[field]);
+  const missing = REQUIRED_POSTING_FIELDS.filter((field) => !submission[field]);
 
   if (missing.length) {
-    return `Please complete ${missing.join(", ")}.`;
+    return `Please complete ${missing.map((field) => POSTING_FIELD_LABELS[field] || field).join(", ")}.`;
+  }
+
+  if (submission.guidelinesConfirmed !== "yes") {
+    return "Please confirm the WPCNA posting guidelines before submitting.";
   }
 
   if (!isEmail(submission.email)) {
     return "Please enter a valid email address.";
   }
 
-  if (submission.subject.length < 3 || submission.message.length < 10) {
+  if (submission.subject.length < 3 || submission.message.length < 20) {
     return "Please include enough detail for WPCNA to review the posting.";
   }
 
@@ -280,11 +350,25 @@ function cleanedDraftSummary(submission) {
 }
 
 function reviewPostingSubmission(submission) {
-  const text = `${submission.subject}\n${submission.message}\n${submission.name}`.trim();
+  const audienceText = Array.isArray(submission.audience) ? submission.audience.join(", ") : "";
+  const text = [
+    submission.subject,
+    submission.category,
+    submission.postingType,
+    submission.organization,
+    submission.location,
+    audienceText,
+    submission.whitePlainsAffiliation,
+    submission.message,
+    submission.name
+  ].filter(Boolean).join("\n").trim();
   const lower = text.toLowerCase();
-  const eventLike = includesAny(lower, EVENT_TERMS);
-  const local = includesAny(lower, LOCAL_TERMS);
-  const communityServing = includesAny(lower, COMMUNITY_TERMS);
+  const eventLike = includesAny(lower, EVENT_TERMS) || /^(event|meeting|workshop|volunteer opportunity)$/i.test(submission.postingType);
+  const datePresent = Boolean(submission.eventDate) || hasConcreteDate(text);
+  const timePresent = Boolean(submission.eventTime) || hasConcreteTime(text);
+  const locationPresent = Boolean(submission.location) || hasLocation(text);
+  const local = includesAny(lower, LOCAL_TERMS) || /white plains/i.test(submission.whitePlainsAffiliation);
+  const communityServing = includesAny(lower, COMMUNITY_TERMS) || /^(neighborhood|civic|workshop|learning|history|music & family|city notice|school\/family|volunteer\/cleanup)$/i.test(submission.category);
   const outsideFlags = matchesRules(text, OUTSIDE_RULES).filter((label) => {
     if (label === "Unrelated city focus") {
       return !local;
@@ -297,7 +381,16 @@ function reviewPostingSubmission(submission) {
     }
     return true;
   });
+  const reviewFlags = [];
   const missingInformation = [];
+
+  if (/^yes$/i.test(submission.fundraising)) {
+    reviewFlags.push("Fundraising disclosed for human review");
+  }
+
+  if (/^yes$/i.test(submission.linksIncluded)) {
+    reviewFlags.push("Links included; verify destinations");
+  }
 
   if (!local) {
     missingInformation.push("White Plains or neighborhood relevance");
@@ -307,16 +400,20 @@ function reviewPostingSubmission(submission) {
     missingInformation.push("Community-serving purpose");
   }
 
-  if (eventLike && !hasConcreteDate(text)) {
+  if (eventLike && !datePresent) {
     missingInformation.push("Specific date");
   }
 
-  if (eventLike && !hasConcreteTime(text)) {
+  if (eventLike && !timePresent) {
     missingInformation.push("Specific time");
   }
 
-  if (eventLike && !hasLocation(text)) {
+  if (eventLike && !locationPresent) {
     missingInformation.push("Specific location");
+  }
+
+  if (/^yes$/i.test(submission.fundraising)) {
+    missingInformation.push("Fundraising purpose and beneficiary");
   }
 
   if (wordCount(submission.message) < 12) {
@@ -331,10 +428,10 @@ function reviewPostingSubmission(submission) {
     notCommercialAdvertising: checklistValue(!outsideFlags.some((flag) => /discount|business|real estate|job/i.test(flag))),
     notPersonalDisputeOrComplaint: checklistValue(!escalationFlags.some((flag) => /complaint|accusation|defamatory/i.test(flag))),
     notUrgentEmergencyMessaging: checklistValue(!escalationFlags.some((flag) => /emergency/i.test(flag))),
-    includesDateIfTimeBased: eventLike ? checklistValue(hasConcreteDate(text)) : "unclear",
-    includesTimeIfTimeBased: eventLike ? checklistValue(hasConcreteTime(text)) : "unclear",
-    includesLocationIfLocationBased: eventLike ? checklistValue(hasLocation(text)) : "unclear",
-    includesOrganizerSource: checklistValue(Boolean(submission.name)),
+    includesDateIfTimeBased: eventLike ? checklistValue(datePresent) : "unclear",
+    includesTimeIfTimeBased: eventLike ? checklistValue(timePresent) : "unclear",
+    includesLocationIfLocationBased: eventLike ? checklistValue(locationPresent) : "unclear",
+    includesOrganizerSource: checklistValue(Boolean(submission.organization || submission.name)),
     includesContactInformationForFollowUp: checklistValue(Boolean(submission.email))
   };
 
@@ -362,8 +459,8 @@ function reviewPostingSubmission(submission) {
   return {
     recommendation,
     reason,
-    triggeredFlags: [...escalationFlags, ...outsideFlags],
-    missingInformation,
+    triggeredFlags: [...escalationFlags, ...outsideFlags, ...reviewFlags],
+    missingInformation: [...new Set(missingInformation)],
     suggestedFollowUp,
     cleanedUpDraftSummary: summary,
     checklist
@@ -392,19 +489,45 @@ function formatGuidelineChecklist(checklist = {}) {
     .join("\n");
 }
 
+function formatField(label, value, maxLength = 500) {
+  const text = Array.isArray(value)
+    ? value.map((item) => safeEmailText(item, maxLength)).filter(Boolean).join(", ")
+    : safeEmailText(value, maxLength);
+
+  return `${label}: ${text || "Not provided"}`;
+}
+
+function formatCivicIntakeSummary(raw = {}) {
+  return [
+    formatField("Posting/Event Title", raw.subject, POSTING_MAX_LENGTHS.subject),
+    formatField("Submission Category", raw.category, POSTING_MAX_LENGTHS.category),
+    formatField("Posting Type", raw.postingType, POSTING_MAX_LENGTHS.postingType),
+    formatField("Organization/Group", raw.organization, POSTING_MAX_LENGTHS.organization),
+    formatField("Contact Name", raw.name, POSTING_MAX_LENGTHS.name),
+    formatField("Contact Email", raw.email, POSTING_MAX_LENGTHS.email),
+    formatField("Event Date", raw.eventDate, POSTING_MAX_LENGTHS.eventDate),
+    formatField("Event Time", raw.eventTime, POSTING_MAX_LENGTHS.eventTime),
+    formatField("Location", raw.location, POSTING_MAX_LENGTHS.location),
+    formatField("Intended Audience", raw.audience, POSTING_MAX_LENGTHS.audience),
+    formatField("White Plains Affiliation", raw.whitePlainsAffiliation, POSTING_MAX_LENGTHS.whitePlainsAffiliation),
+    formatField("Fundraising", raw.fundraising, POSTING_MAX_LENGTHS.fundraising),
+    formatField("Links Included", raw.linksIncluded, POSTING_MAX_LENGTHS.linksIncluded),
+    formatField("Guidelines Confirmed", raw.guidelinesConfirmed, POSTING_MAX_LENGTHS.guidelinesConfirmed)
+  ].join("\n");
+}
+
 function formatOriginalSubmission(raw = {}) {
   return [
-    `Name: ${safeEmailText(raw.name, POSTING_MAX_LENGTHS.name)}`,
-    `Email: ${safeEmailText(raw.email, POSTING_MAX_LENGTHS.email)}`,
-    `Subject: ${safeEmailText(raw.subject, POSTING_MAX_LENGTHS.subject)}`,
-    "",
-    "Message:",
+    "Main Description:",
     safeEmailText(raw.message, POSTING_MAX_LENGTHS.message)
   ].join("\n");
 }
 
 function formatEmailBody({ review, rawSubmission, timestamp, request }) {
   const sections = [
+    "CIVIC INTAKE SUMMARY",
+    formatCivicIntakeSummary(rawSubmission),
+    "",
     "RULE-BASED REVIEW",
     `Recommendation: ${review.recommendation}`,
     `Reason: ${review.reason}`,
@@ -571,13 +694,7 @@ export async function handlePostingSubmission({ request, env, corsHeaders, jsonR
     return errorResponse(validationError, 422, corsHeaders);
   }
 
-  const review = reviewPostingSubmission({
-    name: clean.name,
-    email: clean.email,
-    subject: clean.subject,
-    message: clean.message,
-    pageSource: clean.pageSource
-  });
+  const review = reviewPostingSubmission(clean);
 
   const timestamp = new Date().toISOString();
   const subject = emailSubject(clean.subject);

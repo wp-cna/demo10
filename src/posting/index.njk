@@ -70,7 +70,7 @@ eleventyExcludeFromCollections: true
       <p>Use this form to send community information to WPCNA. Submissions are reviewed before posting.</p>
       <p class="form-note">Your email address is used for follow-up and will not be published unless you specifically ask WPCNA to include it.</p>
 
-      <form class="contact-form" action="{{ site.postingApiUrl }}" method="POST" data-posting-form data-posting-api="{{ site.postingApiUrl }}">
+      <form class="contact-form posting-intake-form" action="{{ site.postingApiUrl }}" method="POST" data-posting-form data-posting-api="{{ site.postingApiUrl }}">
         <input type="hidden" name="pageSource" value="{{ site.baseUrl }}/posting/">
         <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
@@ -79,25 +79,158 @@ eleventyExcludeFromCollections: true
           <input id="posting-website" name="website" type="text" tabindex="-1" autocomplete="off" aria-label="Website">
         </div>
 
-        <div class="form-field">
-          <label for="posting-name">Name</label>
-          <input id="posting-name" name="name" type="text" autocomplete="name" required>
-        </div>
+        <fieldset class="form-section">
+          <legend>What is this?</legend>
 
-        <div class="form-field">
-          <label for="posting-email">Email</label>
-          <input id="posting-email" name="email" type="email" autocomplete="email" required>
-        </div>
+          <div class="form-field">
+            <label for="posting-subject">Posting/Event Title</label>
+            <input id="posting-subject" name="subject" type="text" maxlength="160" autocomplete="off" required>
+            <p class="field-help">Use the public-facing title residents would see if this is posted.</p>
+          </div>
 
-        <div class="form-field">
-          <label for="posting-subject">Subject</label>
-          <input id="posting-subject" name="subject" type="text" maxlength="200" required>
-        </div>
+          <div class="form-grid form-grid-2">
+            <div class="form-field">
+              <label for="posting-category">Category</label>
+              <select id="posting-category" name="category" required>
+                <option value="">Select a category</option>
+                <option value="Neighborhood Event">Neighborhood Event</option>
+                <option value="Civic / Public Meeting">Civic / Public Meeting</option>
+                <option value="Volunteer / Cleanup">Volunteer / Cleanup</option>
+                <option value="Public Notice">Public Notice</option>
+                <option value="School / Youth Activity">School / Youth Activity</option>
+                <option value="Arts / Culture">Arts / Culture</option>
+                <option value="Community Education">Community Education</option>
+                <option value="Senior / Family Activity">Senior / Family Activity</option>
+                <option value="Public Safety / Infrastructure">Public Safety / Infrastructure</option>
+                <option value="Neighborhood Association News">Neighborhood Association News</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
 
-        <div class="form-field">
-          <label for="posting-message">Message <span class="char-hint" data-char-count>240 characters</span></label>
-          <textarea id="posting-message" name="message" rows="5" maxlength="240" required></textarea>
-        </div>
+            <div class="form-field">
+              <span class="form-label">Posting Type</span>
+              <div class="choice-grid choice-grid-compact">
+                <label><input type="radio" name="postingType" value="Event" required> Event</label>
+                <label><input type="radio" name="postingType" value="Notice"> Notice</label>
+                <label><input type="radio" name="postingType" value="Meeting"> Meeting</label>
+                <label><input type="radio" name="postingType" value="Volunteer opportunity"> Volunteer opportunity</label>
+                <label><input type="radio" name="postingType" value="Newsletter/update"> Newsletter/update</label>
+                <label><input type="radio" name="postingType" value="Other"> Other</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend>When and where?</legend>
+
+          <div class="form-grid form-grid-3">
+            <div class="form-field">
+              <label for="posting-event-date">Event Date</label>
+              <input id="posting-event-date" name="eventDate" type="date">
+              <p class="field-help">Use if time-based.</p>
+            </div>
+
+            <div class="form-field">
+              <label for="posting-event-time">Event Time</label>
+              <input id="posting-event-time" name="eventTime" type="time">
+              <p class="field-help">Use if time-based.</p>
+            </div>
+
+            <div class="form-field">
+              <label for="posting-location">Location</label>
+              <input id="posting-location" name="location" type="text" maxlength="180" autocomplete="street-address">
+              <p class="field-help">Use if location-based.</p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend>Who is this for?</legend>
+
+          <div class="form-field">
+            <span class="form-label">Intended Audience</span>
+            <div class="checkbox-grid">
+              <label><input type="checkbox" name="audience" value="Neighborhood residents"> Neighborhood residents</label>
+              <label><input type="checkbox" name="audience" value="Families"> Families</label>
+              <label><input type="checkbox" name="audience" value="Students"> Students</label>
+              <label><input type="checkbox" name="audience" value="Older adults"> Older adults</label>
+              <label><input type="checkbox" name="audience" value="Civic groups"> Civic groups</label>
+              <label><input type="checkbox" name="audience" value="Citywide residents"> Citywide residents</label>
+            </div>
+            <p class="field-help">Choose any that apply.</p>
+          </div>
+
+          <div class="form-field">
+            <span class="form-label">White Plains Affiliation</span>
+            <div class="choice-grid">
+              <label><input type="radio" name="whitePlainsAffiliation" value="White Plains resident or neighborhood group" required> Resident or neighborhood group</label>
+              <label><input type="radio" name="whitePlainsAffiliation" value="White Plains school, civic, or nonprofit group"> School, civic, or nonprofit group</label>
+              <label><input type="radio" name="whitePlainsAffiliation" value="City or public agency"> City or public agency</label>
+              <label><input type="radio" name="whitePlainsAffiliation" value="Other White Plains connection"> Other White Plains connection</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend>Who is submitting this?</legend>
+
+          <div class="form-grid form-grid-2">
+            <div class="form-field">
+              <label for="posting-name">Contact Name</label>
+              <input id="posting-name" name="name" type="text" autocomplete="name" required>
+            </div>
+
+            <div class="form-field">
+              <label for="posting-email">Contact Email</label>
+              <input id="posting-email" name="email" type="email" autocomplete="email" required>
+              <p class="field-help">Used for follow-up. Not published unless requested.</p>
+            </div>
+
+            <div class="form-field form-grid-span">
+              <label for="posting-organization">Organization/Group Name</label>
+              <input id="posting-organization" name="organization" type="text" maxlength="140" autocomplete="organization">
+              <p class="field-help">Optional, but helpful for review.</p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend>Review details</legend>
+
+          <div class="form-grid form-grid-2">
+            <div class="form-field">
+              <span class="form-label">Fundraising</span>
+              <div class="choice-grid choice-grid-inline">
+                <label><input type="radio" name="fundraising" value="No" required> No</label>
+                <label><input type="radio" name="fundraising" value="Yes"> Yes</label>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <span class="form-label">Links Included</span>
+              <div class="choice-grid choice-grid-inline">
+                <label><input type="radio" name="linksIncluded" value="No" required> No</label>
+                <label><input type="radio" name="linksIncluded" value="Yes"> Yes</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="posting-message">Main Description <span class="char-hint" data-char-count>900 characters</span></label>
+            <p class="field-help">What is happening, who is it for, when and where does it occur, and what should residents know?</p>
+            <p class="field-help form-example">Example: Share the purpose, organizer, practical details, and any link WPCNA should review.</p>
+            <textarea id="posting-message" name="message" rows="7" maxlength="900" required></textarea>
+            <p class="field-help">If links are included, paste them here.</p>
+          </div>
+
+          <div class="form-field form-confirmation">
+            <label>
+              <input type="checkbox" name="guidelinesConfirmed" value="yes" required>
+              I understand WPCNA reviews submissions before posting and does not post classifieds, advertising, or personal listings.
+            </label>
+          </div>
+        </fieldset>
 
         <p class="form-status" data-posting-status hidden></p>
         <button class="btn btn-primary btn-block" type="submit" data-posting-submit>Send for review</button>
