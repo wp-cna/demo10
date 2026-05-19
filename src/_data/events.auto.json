@@ -4358,6 +4358,36 @@
     "importSource": "library"
   },
   {
+    "id": "library-virtual-poetry-open-mic-2026-07-01",
+    "slug": "library-virtual-poetry-open-mic-2026-07-01",
+    "title": "Virtual Poetry Open Mic",
+    "category": "Learning",
+    "shortSummary": "Join Zork and Tim for our monthly virtual Poetry Open Mic!",
+    "fullDescription": "Join Zork and Tim for our monthly virtual Poetry Open Mic! If you plan to share your writings and are reading for the first time, please email Tim with a short bio at the address below. This is a virtual event using the Zoom platform. To join, Click This Zoom Link . You can also use the following phone number to call in: +1 929 436 2866 US (New York). Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-07-01",
+    "endDate": "2026-07-01",
+    "startTime": "19:00",
+    "endTime": "21:00",
+    "locationName": "White Plains Public Library, Ask Staff For More Information",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/learning.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/16563567",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "writing and poetry",
+      "teens",
+      "adults",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16563567",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
+  },
+  {
     "id": "library-free-summer-meals-at-the-library-2026-07-02",
     "slug": "library-free-summer-meals-at-the-library-2026-07-02",
     "title": "Free Summer Meals at the Library",
