@@ -1,32 +1,5 @@
 [
   {
-    "id": "city-ebersole-ice-show-2026-03-21",
-    "slug": "city-ebersole-ice-show-2026-03-21",
-    "title": "Ebersole Ice Show",
-    "category": "Arts",
-    "shortSummary": "Ebersole Ice Show is listed on the official White Plains city calendar.",
-    "fullDescription": "Ebersole Ice Show is listed on the official White Plains city calendar. It is set for Ebersole Ice Rink, White Plains, NY. Use the official city page for agendas, updates, and any location changes.",
-    "startDate": "2026-03-21",
-    "endDate": "2026-03-21",
-    "startTime": "17:00",
-    "endTime": null,
-    "locationName": "Ebersole Ice Rink",
-    "locationAddress": "White Plains, NY",
-    "image": "/assets/img/events/arts.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4248&month=3&year=2026&day=21&calType=0",
-    "ctaLabel": "Open city page",
-    "featured": false,
-    "status": "past",
-    "tags": [
-      "city calendar"
-    ],
-    "organizer": "City of White Plains",
-    "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4248&month=3&year=2026&day=21&calType=0",
-    "sourceLabel": "City calendar",
-    "importSource": "city"
-  },
-  {
     "id": "city-capital-projects-board-meeting-2026-03-24",
     "slug": "city-capital-projects-board-meeting-2026-03-24",
     "title": "Capital Projects Board Meeting",
@@ -2232,7 +2205,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4314&month=5&year=2026&day=20&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar",
       "community center"
@@ -2260,7 +2233,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/16502681",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "health and wellness",
       "teens",
@@ -2291,7 +2264,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/16095054",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "small business and non-profits",
       "adults",
@@ -2301,36 +2274,6 @@
     "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16095054",
     "sourceLabel": "Library calendar",
     "importSource": "library"
-  },
-  {
-    "id": "bid-downtown-white-plains-rock-the-block-2026-2026-05-20",
-    "slug": "bid-downtown-white-plains-rock-the-block-2026-2026-05-20",
-    "title": "Downtown White Plains Rock the Block 2026",
-    "category": "Music & Family",
-    "shortSummary": "Location: Mamaroneck Ave.",
-    "fullDescription": "Location: Mamaroneck Ave. (between E. Post Rd. and Maple Ave.) Rock the Block is back for its third year! Join us every third Wednesday from May through August for an evening of live music, outdoor dining, and family-friendly fun in the heart of downtown White. Use the BID page for tickets, participating businesses, and weather updates.",
-    "startDate": "2026-05-20",
-    "endDate": "2026-05-20",
-    "startTime": "17:30",
-    "endTime": "20:30",
-    "locationName": "Downtown White Plains",
-    "locationAddress": "Downtown White Plains, NY 10601",
-    "image": "/assets/img/events/music.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://wpbid.com/events/rock-the-block-2026/",
-    "ctaLabel": "Open event page",
-    "featured": false,
-    "status": "upcoming",
-    "tags": [
-      "downtown",
-      "bid",
-      "family",
-      "music"
-    ],
-    "organizer": "White Plains Business Improvement District",
-    "sourceUrl": "https://wpbid.com/events/rock-the-block-2026/",
-    "sourceLabel": "White Plains BID",
-    "importSource": "bid"
   },
   {
     "id": "bid-may-20-downtown-white-plains-rock-the-block-2026-05-20",
@@ -2350,7 +2293,7 @@
     "externalUrl": "https://wpbid.com/events/may-20-downtown-white-plains-rock-the-block/",
     "ctaLabel": "Open event page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "downtown",
       "bid"
@@ -2378,7 +2321,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4317&month=5&year=2026&day=20&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar",
       "downtown"
@@ -2406,7 +2349,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/15467285",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "educational presentations",
       "teens",
@@ -2653,9 +2596,9 @@
     "importSource": "library"
   },
   {
-    "id": "library-introduction-to-computers-2026-05-28",
-    "slug": "library-introduction-to-computers-2026-05-28",
-    "title": "Introduction to Computers",
+    "id": "library-computer-basics-introduction-to-computers-2026-05-28",
+    "slug": "library-computer-basics-introduction-to-computers-2026-05-28",
+    "title": "Computer Basics: Introduction to Computers",
     "category": "Learning",
     "shortSummary": "Introduction to Computers: Learn the Basics This beginner-friendly class is designed for those who are new to computers or looking to build confidence with…",
     "fullDescription": "Introduction to Computers: Learn the Basics This beginner-friendly class is designed for those who are new to computers or looking to build confidence with technology. Participants will learn how to use a mouse and keyboard, navigate a computer, and understand basic terminology. The class will also cover how to browse the internet, set up and use email, and practice essential skills for everyday use. No prior experience is needed. Check the library page for registration, tickets, and any schedule updates.",
@@ -3745,6 +3688,36 @@
     "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16314701",
     "sourceLabel": "Library calendar",
     "importSource": "library"
+  },
+  {
+    "id": "bid-downtown-white-plains-rock-the-block-2026-2026-06-17",
+    "slug": "bid-downtown-white-plains-rock-the-block-2026-2026-06-17",
+    "title": "Downtown White Plains Rock the Block 2026",
+    "category": "Music & Family",
+    "shortSummary": "Location: Mamaroneck Ave.",
+    "fullDescription": "Location: Mamaroneck Ave. (between E. Post Rd. and Maple Ave.) Rock the Block is back for its third year! Join us every third Wednesday from May through August for an evening of live music, outdoor dining, and family-friendly fun in the heart of downtown White. Use the BID page for tickets, participating businesses, and weather updates.",
+    "startDate": "2026-06-17",
+    "endDate": "2026-06-17",
+    "startTime": "17:30",
+    "endTime": "20:30",
+    "locationName": "Downtown White Plains",
+    "locationAddress": "Downtown White Plains, NY 10601",
+    "image": "/assets/img/events/music.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://wpbid.com/events/rock-the-block-2026/",
+    "ctaLabel": "Open event page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "downtown",
+      "bid",
+      "family",
+      "music"
+    ],
+    "organizer": "White Plains Business Improvement District",
+    "sourceUrl": "https://wpbid.com/events/rock-the-block-2026/",
+    "sourceLabel": "White Plains BID",
+    "importSource": "bid"
   },
   {
     "id": "bid-june-17-downtown-white-plains-rock-the-block-2026-06-17",
