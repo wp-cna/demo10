@@ -2659,7 +2659,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/16625243",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "health and wellness",
       "teens",
@@ -2690,7 +2690,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4336&month=6&year=2026&day=3&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar",
       "public meeting"
@@ -2718,7 +2718,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/15047129",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "writing and poetry",
       "teens",
@@ -2748,7 +2748,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4234&month=6&year=2026&day=3&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
@@ -2756,6 +2756,36 @@
     "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4234&month=6&year=2026&day=3&calType=0",
     "sourceLabel": "City calendar",
     "importSource": "city"
+  },
+  {
+    "id": "library-citywide-art-show-2026-06-04",
+    "slug": "library-citywide-art-show-2026-06-04",
+    "title": "Citywide Art Show",
+    "category": "Learning",
+    "shortSummary": "Reception Details: Church Street and George Washington Schools: Thursday, May 28 Mamaroneck Ave., Post Road and Ridgeway Schools: Tuesday, June 2 Eastview,…",
+    "fullDescription": "Reception Details: Church Street and George Washington Schools: Thursday, May 28 Mamaroneck Ave., Post Road and Ridgeway Schools: Tuesday, June 2 Eastview, Highlands, Rochambeau and White Plains High School: Wednesday, June 3 Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-06-04",
+    "endDate": "2026-06-04",
+    "startTime": "00:00",
+    "endTime": "23:59",
+    "locationName": "White Plains Public Library, Auditorium,Museum Gallery",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/learning.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/16558075",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "art exhibit and gallery opening",
+      "families",
+      "children",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16558075",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
   },
   {
     "id": "library-short-story-film-discussion-series-2026-06-04",
@@ -2814,6 +2844,36 @@
     ],
     "organizer": "White Plains Public Library",
     "sourceUrl": "https://calendar.whiteplainslibrary.org/event/15739191",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
+  },
+  {
+    "id": "library-citywide-art-show-2026-06-05",
+    "slug": "library-citywide-art-show-2026-06-05",
+    "title": "Citywide Art Show",
+    "category": "Learning",
+    "shortSummary": "Reception Details: Church Street and George Washington Schools: Thursday, May 28 Mamaroneck Ave., Post Road and Ridgeway Schools: Tuesday, June 2 Eastview,…",
+    "fullDescription": "Reception Details: Church Street and George Washington Schools: Thursday, May 28 Mamaroneck Ave., Post Road and Ridgeway Schools: Tuesday, June 2 Eastview, Highlands, Rochambeau and White Plains High School: Wednesday, June 3 Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-06-05",
+    "endDate": "2026-06-05",
+    "startTime": "00:00",
+    "endTime": "23:59",
+    "locationName": "White Plains Public Library, Auditorium,Museum Gallery",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/learning.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/16558076",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "art exhibit and gallery opening",
+      "families",
+      "children",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16558076",
     "sourceLabel": "Library calendar",
     "importSource": "library"
   },
