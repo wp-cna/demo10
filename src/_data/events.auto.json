@@ -2977,7 +2977,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4681&month=9&year=2026&day=2&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
@@ -3004,7 +3004,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4609&month=9&year=2026&day=2&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
@@ -3031,7 +3031,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/16563570",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "writing and poetry",
       "teens",
@@ -3061,7 +3061,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4237&month=9&year=2026&day=2&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
@@ -3906,6 +3906,40 @@
     "importSource": "city"
   },
   {
+    "id": "library-learn-about-3d-printing-in-the-igloo-2026-09-24",
+    "slug": "library-learn-about-3d-printing-in-the-igloo-2026-09-24",
+    "title": "Learn about 3D Printing (in the Igloo)",
+    "category": "Learning",
+    "shortSummary": "Learn about 3D printing and how to use the Library's 3D printing services.",
+    "fullDescription": "Learn about 3D printing and how to use the Library's 3D printing services. Join us for an engaging demonstration session. Held in the Library's panoramic Igloo content room (near Trove entrance on 2nd floor), funded by the Library Foundation and Optimum. Presented by Digital Media Specialist Austin Olney. Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-09-24",
+    "endDate": "2026-09-24",
+    "startTime": "17:15",
+    "endTime": "17:45",
+    "locationName": "White Plains Public Library, The Igloo - Optimum Technology Room",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/learning.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/16978096",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "educational presentations",
+      "digital technology",
+      "teens",
+      "middle school (grades 6 - 8)",
+      "high school (grades 9 - 12)",
+      "grades 6 - 8",
+      "adults",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16978096",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
+  },
+  {
     "id": "bid-jazz-stroll-2026-2026-09-24",
     "slug": "bid-jazz-stroll-2026-2026-09-24",
     "title": "Jazz Stroll 2026",
@@ -4271,38 +4305,6 @@
     "importSource": "library"
   },
   {
-    "id": "library-wild-america-2026-10-01",
-    "slug": "library-wild-america-2026-10-01",
-    "title": "Wild America",
-    "category": "Learning",
-    "shortSummary": "Join the Wolf Conservation Center in a celebration of the United States of America&rsquo;s biodiversity in an exploration of the unique flora and fauna that…",
-    "fullDescription": "Join the Wolf Conservation Center in a celebration of the United States of America&rsquo;s biodiversity in an exploration of the unique flora and fauna that make up our home. Learn more about the history of species in our country, and learn what makes us special, and what makes us strong. Discover the diversity of life here in the USA in a celebration of the 250th birthday of the United States of America. Website: NYWOLF.ORG Facebook: Wolf Conservation Center Instagram: @wolfconservationcenter Image credit Wolf Conservation Center Check the library page for registration, tickets, and any schedule updates.",
-    "startDate": "2026-10-01",
-    "endDate": "2026-10-01",
-    "startTime": "18:30",
-    "endTime": "19:30",
-    "locationName": "White Plains Public Library, Auditorium",
-    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
-    "image": "/assets/img/events/learning.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://calendar.whiteplainslibrary.org/event/16676001",
-    "ctaLabel": "Open library page",
-    "featured": false,
-    "status": "upcoming",
-    "tags": [
-      "history & genealogy",
-      "educational presentations",
-      "teens",
-      "children",
-      "adults",
-      "library"
-    ],
-    "organizer": "White Plains Public Library",
-    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16676001",
-    "sourceLabel": "Library calendar",
-    "importSource": "library"
-  },
-  {
     "id": "library-chair-yoga-with-maria-madhavi-2026-10-02",
     "slug": "library-chair-yoga-with-maria-madhavi-2026-10-02",
     "title": "Chair Yoga with Maria Madhavi",
@@ -4561,6 +4563,36 @@
     "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4695&month=10&year=2026&day=7&calType=0",
     "sourceLabel": "City calendar",
     "importSource": "city"
+  },
+  {
+    "id": "library-virtual-poetry-open-mic-2026-10-07",
+    "slug": "library-virtual-poetry-open-mic-2026-10-07",
+    "title": "Virtual Poetry Open Mic",
+    "category": "Learning",
+    "shortSummary": "Join Zork and Tim for our monthly virtual Poetry Open Mic!",
+    "fullDescription": "Join Zork and Tim for our monthly virtual Poetry Open Mic! If you plan to share your writings and are reading for the first time, please email Tim with a short bio at the address below. This is a virtual event using the Zoom platform. To join, Click This Zoom Link . You can also use the following phone number to call in: +1 929 436 2866 US (New York). Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-10-07",
+    "endDate": "2026-10-07",
+    "startTime": "19:00",
+    "endTime": "21:00",
+    "locationName": "White Plains Public Library, Ask Staff For More Information",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/learning.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/16563571",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "writing and poetry",
+      "teens",
+      "adults",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16563571",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
   },
   {
     "id": "city-zoning-board-of-appeals-2026-10-07",
@@ -4864,36 +4896,6 @@
     "importSource": "library"
   },
   {
-    "id": "library-chair-yoga-with-maria-madhavi-2026-10-16",
-    "slug": "library-chair-yoga-with-maria-madhavi-2026-10-16",
-    "title": "Chair Yoga with Maria Madhavi",
-    "category": "Learning",
-    "shortSummary": "This low-impact practice is designed to improve flexibility, balance, strength, and relaxation while using a chair for support.",
-    "fullDescription": "This low-impact practice is designed to improve flexibility, balance, strength, and relaxation while using a chair for support. Perfect for beginners, older adults, and anyone looking for a safe and accessible way to stay active. Wear comfortable clothing. No prior yoga experience is necessary. Participation in White Plains Public Library programs is voluntary. By taking part in this activity, you acknowledge that you are responsible for your own well-being and accept any risks associated with participation, including the possibility of physical injury. The White Plains Public Library, its employees, trustees, volunteers, and representatives shall not be held liable for any injury, loss, or damage resulting from your participation in this program. Check the library page for registration, tickets, and any schedule updates.",
-    "startDate": "2026-10-16",
-    "endDate": "2026-10-16",
-    "startTime": "11:00",
-    "endTime": "12:00",
-    "locationName": "White Plains Public Library, Auditorium",
-    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
-    "image": "/assets/img/events/learning.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://calendar.whiteplainslibrary.org/event/16845365",
-    "ctaLabel": "Open library page",
-    "featured": false,
-    "status": "upcoming",
-    "tags": [
-      "health and wellness",
-      "adults about 55 and over",
-      "adults",
-      "library"
-    ],
-    "organizer": "White Plains Public Library",
-    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16845365",
-    "sourceLabel": "Library calendar",
-    "importSource": "library"
-  },
-  {
     "id": "library-repair-cafe-teen-volunteer-training-2026-10-16",
     "slug": "library-repair-cafe-teen-volunteer-training-2026-10-16",
     "title": "Repair Cafe Teen Volunteer Training",
@@ -4949,6 +4951,36 @@
     "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4582&month=10&year=2026&day=17&calType=0",
     "sourceLabel": "City calendar",
     "importSource": "city"
+  },
+  {
+    "id": "library-young-musicians-of-westchester-the-jazz-kwintet-2026-10-17",
+    "slug": "library-young-musicians-of-westchester-the-jazz-kwintet-2026-10-17",
+    "title": "Young Musicians of Westchester: 'The Jazz Kwintet'",
+    "category": "Learning",
+    "shortSummary": "Young Musicians of Westchester, an all-volunteer nonprofit organization, assists musicians embarking on professional careers with opportunities to perform for…",
+    "fullDescription": "Young Musicians of Westchester, an all-volunteer nonprofit organization, assists musicians embarking on professional careers with opportunities to perform for Westchester audiences in free public concerts. Students and recent alumni from great music conservatories, including Juilliard, Bard, Yale, CUNY Graduate Center, SUNY Purchase and the Aaron Copland School of Music, participate in our concerts and receive stipends for their performances. Concerts take place in New Rochelle, Scarsdale, White Plains and Yonkers, bringing live music performances to community residents who might not be able to attend and enjoy these events. Please see more about our organization at https://www.youngmusiciansofwestchester.org/ Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-10-17",
+    "endDate": "2026-10-17",
+    "startTime": "14:00",
+    "endTime": "15:00",
+    "locationName": "White Plains Public Library, Auditorium",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/learning.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/16413664",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "performing arts",
+      "families",
+      "adults",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16413664",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
   },
   {
     "id": "city-halloween-parade-2026-10-18",
