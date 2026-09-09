@@ -30,36 +30,6 @@
     "importSource": "wppac"
   },
   {
-    "id": "library-earring-making-workshop-2026-07-10",
-    "slug": "library-earring-making-workshop-2026-07-10",
-    "title": "Earring Making Workshop",
-    "category": "Workshop",
-    "shortSummary": "Joan Lloyd donates hundreds of pairs of beaded earrings every year to women's shelters.",
-    "fullDescription": "Joan Lloyd donates hundreds of pairs of beaded earrings every year to women's shelters. Participants can create beautiful beaded earrings for themselves and for women who are domestic violence survivors. Check out the full lineup of crafting and stitching classes! Check the library page for registration, tickets, and any schedule updates.",
-    "startDate": "2026-07-10",
-    "endDate": "2026-07-10",
-    "startTime": "14:00",
-    "endTime": "16:00",
-    "locationName": "White Plains Public Library, Auditorium",
-    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
-    "image": "/assets/img/events/workshop.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://calendar.whiteplainslibrary.org/event/16304080",
-    "ctaLabel": "Open library page",
-    "featured": false,
-    "status": "past",
-    "tags": [
-      "arts and crafts",
-      "adults about 55 and over",
-      "adults",
-      "library"
-    ],
-    "organizer": "White Plains Public Library",
-    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16304080",
-    "sourceLabel": "Library calendar",
-    "importSource": "library"
-  },
-  {
     "id": "bid-white-plains-soccer-fest-2026-07-11",
     "slug": "bid-white-plains-soccer-fest-2026-07-11",
     "title": "White Plains Soccer Fest",
@@ -2940,7 +2910,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=3608&month=9&year=2026&day=8&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar",
       "public meeting",
