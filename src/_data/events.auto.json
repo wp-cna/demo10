@@ -2682,7 +2682,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4694&month=9&year=2026&day=22&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar",
       "community center"
@@ -2710,7 +2710,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/17212608",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "adults",
       "library"
@@ -2738,7 +2738,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4357&month=9&year=2026&day=22&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar",
       "public meeting"
@@ -2801,34 +2801,6 @@
     "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4684&month=9&year=2026&day=23&calType=0",
     "sourceLabel": "City calendar",
     "importSource": "city"
-  },
-  {
-    "id": "bid-jazzfest-downtown-white-plains-2026-2026-09-23",
-    "slug": "bid-jazzfest-downtown-white-plains-2026-2026-09-23",
-    "title": "JazzFest Downtown White Plains 2026",
-    "category": "Food & Downtown",
-    "shortSummary": "Celebrating its 15th year, JazzFest White Plains returns this fall with a bold, artist-driven lineup that reflects the vitality of jazz today.",
-    "fullDescription": "Celebrating its 15th year, JazzFest White Plains returns this fall with a bold, artist-driven lineup that reflects the vitality of jazz today. Across five days, 19 performances will bring legendary artists, contemporary innovators and emerging voices to downtown White Plains. Featuring five GRAMMY Award winners. Use the BID page for tickets, participating businesses, and weather updates.",
-    "startDate": "2026-09-23",
-    "endDate": "2026-09-23",
-    "startTime": "12:00",
-    "endTime": null,
-    "locationName": "Downtown White Plains",
-    "locationAddress": "Downtown White Plains, NY 10601",
-    "image": "/assets/img/events/food.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://wpbid.com/events/jazzfest-downtown-white-plains-2026/",
-    "ctaLabel": "Open event page",
-    "featured": false,
-    "status": "upcoming",
-    "tags": [
-      "downtown",
-      "bid"
-    ],
-    "organizer": "White Plains Business Improvement District",
-    "sourceUrl": "https://wpbid.com/events/jazzfest-downtown-white-plains-2026/",
-    "sourceLabel": "White Plains BID",
-    "importSource": "bid"
   },
   {
     "id": "city-music-at-the-market-2026-09-23",
@@ -2946,34 +2918,6 @@
     "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16978096",
     "sourceLabel": "Library calendar",
     "importSource": "library"
-  },
-  {
-    "id": "bid-jazz-stroll-2026-2026-09-24",
-    "slug": "bid-jazz-stroll-2026-2026-09-24",
-    "title": "Jazz Stroll 2026",
-    "category": "Food & Downtown",
-    "shortSummary": "JAZZ STROLL: THURSDAY, SEPT.",
-    "fullDescription": "JAZZ STROLL: THURSDAY, SEPT. 24 Stroll through the heart of downtown White Plains and experience the energy of live improvised jazz and poetry. Begin your creative evening at Chazz Palminteri and enjoy delicious Italian appetizers or pasta. Next, head over to Shiraz Kitchen & Wine. Use the BID page for tickets, participating businesses, and weather updates.",
-    "startDate": "2026-09-24",
-    "endDate": "2026-09-24",
-    "startTime": "17:30",
-    "endTime": "21:00",
-    "locationName": "Downtown White Plains",
-    "locationAddress": "Downtown White Plains, NY 10601",
-    "image": "/assets/img/events/food.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://wpbid.com/events/jazz-stroll-2026/",
-    "ctaLabel": "Open event page",
-    "featured": false,
-    "status": "upcoming",
-    "tags": [
-      "downtown",
-      "bid"
-    ],
-    "organizer": "White Plains Business Improvement District",
-    "sourceUrl": "https://wpbid.com/events/jazz-stroll-2026/",
-    "sourceLabel": "White Plains BID",
-    "importSource": "bid"
   },
   {
     "id": "city-consolidated-annual-performance-and-evaluation-report-caper-public-hearing-2026-09-24",
@@ -3139,34 +3083,6 @@
     "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4696&month=9&year=2026&day=27&calType=0",
     "sourceLabel": "City calendar",
     "importSource": "city"
-  },
-  {
-    "id": "bid-sunday-jazz-alfresco-2026-09-27",
-    "slug": "bid-sunday-jazz-alfresco-2026-09-27",
-    "title": "Sunday Jazz Alfresco",
-    "category": "Food & Downtown",
-    "shortSummary": "SUNDAY, SEPT. 27Sunday Jazz Alfresco Join us for JazzFest’s grand finale, Jazz Al Fresco, on Sunday, September 27th, 2026. Enjoy dining in the open, vibrant air of…",
-    "fullDescription": "SUNDAY, SEPT. 27Sunday Jazz Alfresco Join us for JazzFest’s grand finale, Jazz Al Fresco, on Sunday, September 27th, 2026. Enjoy dining in the open, vibrant air of our downtown street – on Mamaroneck Ave. between E. Post Rd and Maple Ave. The event will begin. Use the BID page for tickets, participating businesses, and weather updates.",
-    "startDate": "2026-09-27",
-    "endDate": "2026-09-27",
-    "startTime": "12:15",
-    "endTime": "19:30",
-    "locationName": "Downtown White Plains",
-    "locationAddress": "Downtown White Plains, NY 10601",
-    "image": "/assets/img/events/food.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://wpbid.com/events/sunday-jazz-alfresco/",
-    "ctaLabel": "Open event page",
-    "featured": false,
-    "status": "upcoming",
-    "tags": [
-      "downtown",
-      "bid"
-    ],
-    "organizer": "White Plains Business Improvement District",
-    "sourceUrl": "https://wpbid.com/events/sunday-jazz-alfresco/",
-    "sourceLabel": "White Plains BID",
-    "importSource": "bid"
   },
   {
     "id": "city-common-council-work-session-2026-09-28",
@@ -3631,34 +3547,6 @@
     "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4238&month=10&year=2026&day=7&calType=0",
     "sourceLabel": "City calendar",
     "importSource": "city"
-  },
-  {
-    "id": "bid-oktoberfest-2026-2026-10-11",
-    "slug": "bid-oktoberfest-2026-2026-10-11",
-    "title": "Oktoberfest 2026",
-    "category": "Food & Downtown",
-    "shortSummary": "Downtown White Plains OktoberFest returns!",
-    "fullDescription": "Downtown White Plains OktoberFest returns! Sunday October 11, 2026 from 1pm to 6pm on Mamaroneck Ave. between Maple Ave. and Quarropas St. Rain or Shine Oktoberfest returns for another year…bigger and better! Come celebrate with us and thousands of locals and visitors in the heart. Use the BID page for tickets, participating businesses, and weather updates.",
-    "startDate": "2026-10-11",
-    "endDate": "2026-10-11",
-    "startTime": "13:00",
-    "endTime": "18:00",
-    "locationName": "Downtown White Plains",
-    "locationAddress": "Downtown White Plains, NY 10601",
-    "image": "/assets/img/events/food.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://wpbid.com/events/oktoberfest-2026/",
-    "ctaLabel": "Open event page",
-    "featured": false,
-    "status": "upcoming",
-    "tags": [
-      "downtown",
-      "bid"
-    ],
-    "organizer": "White Plains Business Improvement District",
-    "sourceUrl": "https://wpbid.com/events/oktoberfest-2026/",
-    "sourceLabel": "White Plains BID",
-    "importSource": "bid"
   },
   {
     "id": "library-the-battle-of-white-plains-washington-and-howe-in-westchester-2026-10-11",
@@ -4500,6 +4388,39 @@
     ],
     "organizer": "White Plains Public Library",
     "sourceUrl": "https://calendar.whiteplainslibrary.org/event/17271432",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
+  },
+  {
+    "id": "library-the-feeding-circle-baby-cafe-2026-11-06",
+    "slug": "library-the-feeding-circle-baby-cafe-2026-11-06",
+    "title": "The Feeding Circle Baby Cafe",
+    "category": "Civic",
+    "shortSummary": "A warm, welcoming place to gather, share experiences, and receive guidance on breastfeeding and infant feeding.",
+    "fullDescription": "A warm, welcoming place to gather, share experiences, and receive guidance on breastfeeding and infant feeding. Moms and babies can connect with an International Board Certified Lactation Consultant, ask questions, and find encouragement, practical tips, and community support in a relaxed environment. An infant scale is available for weighed feeds. About Mariel: I am an International Board Certified Lactation Consultant with a background in dentistry and a big heart for supporting families through the breastfeeding journey. After my own breastfeeding challenges, I felt called to help other parents feel more confident, supported, and cared for. I love bringing a little warmth, encouragement, and practical guidance to every family I meet, and I&rsquo;m grateful to be part of a community that helps babies and parents grow and thrive together. I am fluent in Spanish. www.lactationforall.com Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-11-06",
+    "endDate": "2026-11-06",
+    "startTime": "11:45",
+    "endTime": "13:00",
+    "locationName": "White Plains Public Library, Story Trove",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/civic.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/16611375",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "parents and caregivers",
+      "health and wellness",
+      "parents",
+      "children",
+      "birth to 24 months",
+      "adults",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16611375",
     "sourceLabel": "Library calendar",
     "importSource": "library"
   },
