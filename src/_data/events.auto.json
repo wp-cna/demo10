@@ -2766,7 +2766,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4696&month=9&year=2026&day=23&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
@@ -2793,7 +2793,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4684&month=9&year=2026&day=23&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
@@ -2820,7 +2820,7 @@
     "externalUrl": "https://wpbid.com/events/jazzfest-downtown-white-plains-2026/",
     "ctaLabel": "Open event page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "downtown",
       "bid"
@@ -2848,7 +2848,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4607&month=9&year=2026&day=23&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
@@ -2875,7 +2875,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/16909957",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "other city department program",
       "families",
@@ -3083,6 +3083,33 @@
     ],
     "organizer": "City of White Plains",
     "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4696&month=9&year=2026&day=26&calType=0",
+    "sourceLabel": "City calendar",
+    "importSource": "city"
+  },
+  {
+    "id": "city-car-seat-check-up-event-2026-09-26",
+    "slug": "city-car-seat-check-up-event-2026-09-26",
+    "title": "Car Seat Check Up Event",
+    "category": "Community",
+    "shortSummary": "Car Seat Check Up Event is listed on the official White Plains city calendar.",
+    "fullDescription": "Car Seat Check Up Event is listed on the official White Plains city calendar. It is set for Join us for our Car Seat Check Up Event at City Hall - 255 Main Street on Saturday, September 26th, 2026 (10AM-2PM). Officers will make certain your seat is: safe, no recalls, and no imperfections, age appropriate and installed properly., White Plains, NY. Use the official city page for agendas, updates, and any location changes.",
+    "startDate": "2026-09-26",
+    "endDate": "2026-09-26",
+    "startTime": "10:00",
+    "endTime": "14:00",
+    "locationName": "Join us for our Car Seat Check Up Event at City Hall - 255 Main Street on Saturday, September 26th, 2026 (10AM-2PM). Officers will make certain your seat is: safe, no recalls, and no imperfections, age appropriate and installed properly.",
+    "locationAddress": "White Plains, NY",
+    "image": "/assets/img/events/community.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4703&month=9&year=2026&day=26&calType=0",
+    "ctaLabel": "Open city page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "city calendar"
+    ],
+    "organizer": "City of White Plains",
+    "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4703&month=9&year=2026&day=26&calType=0",
     "sourceLabel": "City calendar",
     "importSource": "city"
   },
@@ -4101,6 +4128,33 @@
     "importSource": "library"
   },
   {
+    "id": "city-home-energy-savings-workshop-2026-10-22",
+    "slug": "city-home-energy-savings-workshop-2026-10-22",
+    "title": "Home Energy Savings Workshop",
+    "category": "Workshop",
+    "shortSummary": "Home Energy Savings Workshop is listed on the official White Plains city calendar.",
+    "fullDescription": "Home Energy Savings Workshop is listed on the official White Plains city calendar. It is set for Home Energy Savings Workshop, The City of White Plains and Sustainable Westchester present the Home Energy Savings Workshop at the White Plains Public Library on Thursday, October 22, 2026, at 6:30 pm.. Use the official city page for agendas, updates, and any location changes.",
+    "startDate": "2026-10-22",
+    "endDate": "2026-10-22",
+    "startTime": "18:30",
+    "endTime": null,
+    "locationName": "Home Energy Savings Workshop",
+    "locationAddress": "The City of White Plains and Sustainable Westchester present the Home Energy Savings Workshop at the White Plains Public Library on Thursday, October 22, 2026, at 6:30 pm.",
+    "image": "/assets/img/events/workshop.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4702&month=10&year=2026&day=22&calType=0",
+    "ctaLabel": "Open city page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "city calendar"
+    ],
+    "organizer": "City of White Plains",
+    "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4702&month=10&year=2026&day=22&calType=0",
+    "sourceLabel": "City calendar",
+    "importSource": "city"
+  },
+  {
     "id": "city-howl-o-ween-bash-dog-park-event-2026-10-24",
     "slug": "city-howl-o-ween-bash-dog-park-event-2026-10-24",
     "title": "Howl-o-Ween Bash - Dog Park Event",
@@ -4533,6 +4587,37 @@
     ],
     "organizer": "White Plains Public Library",
     "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16611375",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
+  },
+  {
+    "id": "library-step-into-a-safari-vr-search-and-find-2026-11-07",
+    "slug": "library-step-into-a-safari-vr-search-and-find-2026-11-07",
+    "title": "Step into a Safari: VR Search and Find!",
+    "category": "Learning",
+    "shortSummary": "Experience Virtual Reality (VR) without a headset in the Library's panoramic content room.",
+    "fullDescription": "Experience Virtual Reality (VR) without a headset in the Library's panoramic content room. Technology installed by Igloo Vision and funded by the Library Foundation/Optimum. Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-07",
+    "startTime": "11:00",
+    "endTime": "11:30",
+    "locationName": "White Plains Public Library, The Igloo - Optimum Technology Room",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/learning.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/16907093",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "fun and games",
+      "digital technology",
+      "families",
+      "children",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16907093",
     "sourceLabel": "Library calendar",
     "importSource": "library"
   },
