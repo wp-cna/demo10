@@ -1,63 +1,5 @@
 [
   {
-    "id": "city-peruvian-flag-raising-2026-07-26",
-    "slug": "city-peruvian-flag-raising-2026-07-26",
-    "title": "Peruvian Flag Raising",
-    "category": "Community",
-    "shortSummary": "Peruvian Flag Raising is listed on the official White Plains city calendar.",
-    "fullDescription": "Peruvian Flag Raising is listed on the official White Plains city calendar. It is set for Renaissance Plaza Park, White Plains, NY. Use the official city page for agendas, updates, and any location changes.",
-    "startDate": "2026-07-26",
-    "endDate": "2026-07-26",
-    "startTime": "10:00",
-    "endTime": "11:30",
-    "locationName": "Renaissance Plaza Park",
-    "locationAddress": "White Plains, NY",
-    "image": "/assets/img/events/community.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4271&month=7&year=2026&day=26&calType=0",
-    "ctaLabel": "Open city page",
-    "featured": false,
-    "status": "past",
-    "tags": [
-      "city calendar"
-    ],
-    "organizer": "City of White Plains",
-    "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4271&month=7&year=2026&day=26&calType=0",
-    "sourceLabel": "City calendar",
-    "importSource": "city"
-  },
-  {
-    "id": "library-musical-bingo-a-self-care-sound-session-2026-07-26",
-    "slug": "library-musical-bingo-a-self-care-sound-session-2026-07-26",
-    "title": "Musical BINGO: A Self-Care Sound Session",
-    "category": "Learning",
-    "shortSummary": "Join us for the ultimate stress relief at our 90s &amp; 2000s Musical Bingo event!",
-    "fullDescription": "Join us for the ultimate stress relief at our 90s &amp; 2000s Musical Bingo event! This high-energy experience boosts happiness by combining nostalgic throwbacks with the excitement of BINGO. You'll have the chance to showcase your pop culture trivia skills, enjoy a rush of happiness with every song you recognize, and compete for fantastic prizes. Come for the ultimate millennial soundtrack, and leave with great memories and bragging rights! Why Musical Bingo is the Ultimate Self-Care: The Ultimate Mood Booster: Music is scientifically proven to lower cortisol (the stress hormone) and release dopamine. We&rsquo;re channeling that science into pure fun! Nostalgia &amp; Connection: Belt out the lyrics to songs you forgot you loved, share laughs with great company, and celebrate each other's wins. Zero Pressure: No singing talent required, no complex rules to follow, and absolutely no stress. Just show up, listen, and play. Prizes &amp; Surprises: Yes, there will be bingo! But more importantly, there will be awesome self-care prizes up for grabs. Check the library page for registration, tickets, and any schedule updates.",
-    "startDate": "2026-07-26",
-    "endDate": "2026-07-26",
-    "startTime": "14:00",
-    "endTime": "15:30",
-    "locationName": "White Plains Public Library, Auditorium",
-    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
-    "image": "/assets/img/events/learning.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://calendar.whiteplainslibrary.org/event/16580716",
-    "ctaLabel": "Open library page",
-    "featured": false,
-    "status": "past",
-    "tags": [
-      "fun and games",
-      "arts and crafts",
-      "adults about 55 and over",
-      "adults",
-      "library"
-    ],
-    "organizer": "White Plains Public Library",
-    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16580716",
-    "sourceLabel": "Library calendar",
-    "importSource": "library"
-  },
-  {
     "id": "city-common-council-work-session-2026-07-27",
     "slug": "city-common-council-work-session-2026-07-27",
     "title": "Common Council Work Session",
@@ -2904,7 +2846,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4696&month=9&year=2026&day=24&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
@@ -2931,7 +2873,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/16978096",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "educational presentations",
       "digital technology",
@@ -2965,7 +2907,7 @@
     "externalUrl": "https://wpbid.com/events/jazz-stroll-2026/",
     "ctaLabel": "Open event page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "downtown",
       "bid"
@@ -2993,7 +2935,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4525&month=9&year=2026&day=24&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
@@ -3119,12 +3061,12 @@
     "title": "Family Fun Wellness Festival",
     "category": "Family",
     "shortSummary": "Family Fun Wellness Festival is listed on the official White Plains city calendar.",
-    "fullDescription": "Family Fun Wellness Festival is listed on the official White Plains city calendar. It is set for Tibbits Park, White Plains, NY. Use the official city page for agendas, updates, and any location changes.",
+    "fullDescription": "Family Fun Wellness Festival is listed on the official White Plains city calendar. It is set for White Plains City Center, 3rd Floor Apple Cinemas, White Plains, NY. Use the official city page for agendas, updates, and any location changes.",
     "startDate": "2026-09-26",
     "endDate": "2026-09-26",
     "startTime": "12:00",
     "endTime": "16:00",
-    "locationName": "Tibbits Park",
+    "locationName": "White Plains City Center, 3rd Floor Apple Cinemas",
     "locationAddress": "White Plains, NY",
     "image": "/assets/img/events/family.svg",
     "flyerPdf": null,
