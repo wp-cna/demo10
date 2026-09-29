@@ -1,63 +1,5 @@
 [
   {
-    "id": "library-3d-printing-for-teens-2026-07-30",
-    "slug": "library-3d-printing-for-teens-2026-07-30",
-    "title": "3D Printing for Teens",
-    "category": "Learning",
-    "shortSummary": "Curious about 3D printing?",
-    "fullDescription": "Curious about 3D printing? Join us for a hands-on class that introduces the basics of 3D design using TinkerCAD, a free and beginner-friendly web-based program. Learn how to create simple 3D models and see how designs are brought to life with a 3D printer. No experience needed - just bring your creativity! This series is for teens in grades 7-12 (as of fall 2026). Registration is required; participants must attend all four days of the series. This program is made possible through the generous support of NewYork-Presbyterian. Check the library page for registration, tickets, and any schedule updates.",
-    "startDate": "2026-07-30",
-    "endDate": "2026-07-30",
-    "startTime": "13:00",
-    "endTime": "14:30",
-    "locationName": "White Plains Public Library, Edge Media Lab",
-    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
-    "image": "/assets/img/events/learning.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://calendar.whiteplainslibrary.org/event/16665684",
-    "ctaLabel": "Open library page",
-    "featured": false,
-    "status": "past",
-    "tags": [
-      "steam",
-      "fun and games",
-      "digital technology",
-      "teens",
-      "library"
-    ],
-    "organizer": "White Plains Public Library",
-    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16665684",
-    "sourceLabel": "Library calendar",
-    "importSource": "library"
-  },
-  {
-    "id": "city-neighborhood-nights-2026-07-30",
-    "slug": "city-neighborhood-nights-2026-07-30",
-    "title": "Neighborhood Nights",
-    "category": "Learning",
-    "shortSummary": "Neighborhood Nights is listed on the official White Plains city calendar.",
-    "fullDescription": "Neighborhood Nights is listed on the official White Plains city calendar. It is set for Library Auditorium, White Plains, NY. Use the official city page for agendas, updates, and any location changes.",
-    "startDate": "2026-07-30",
-    "endDate": "2026-07-30",
-    "startTime": "18:30",
-    "endTime": null,
-    "locationName": "Library Auditorium",
-    "locationAddress": "White Plains, NY",
-    "image": "/assets/img/events/learning.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4344&month=7&year=2026&day=30&calType=0",
-    "ctaLabel": "Open city page",
-    "featured": false,
-    "status": "past",
-    "tags": [
-      "city calendar"
-    ],
-    "organizer": "City of White Plains",
-    "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4344&month=7&year=2026&day=30&calType=0",
-    "sourceLabel": "City calendar",
-    "importSource": "city"
-  },
-  {
     "id": "library-adult-painting-class-2026-08-02",
     "slug": "library-adult-painting-class-2026-08-02",
     "title": "Adult Painting Class",
@@ -2860,7 +2802,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4267&month=9&year=2026&day=28&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar",
       "city hall"
@@ -4379,6 +4321,34 @@
     "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4562&month=11&year=2026&day=11&calType=0",
     "sourceLabel": "City calendar",
     "importSource": "city"
+  },
+  {
+    "id": "library-family-services-of-westchester-2026-11-12",
+    "slug": "library-family-services-of-westchester-2026-11-12",
+    "title": "Family Services of Westchester",
+    "category": "Learning",
+    "shortSummary": "Staff from Family Services of Westchester will be in the lobby to promote their programs and services.",
+    "fullDescription": "Staff from Family Services of Westchester will be in the lobby to promote their programs and services. Contact Yancy Castro, Community Wellness Specialist for details at Yancy.Castro@fsw.org Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-11-12",
+    "endDate": "2026-11-12",
+    "startTime": "10:30",
+    "endTime": "12:30",
+    "locationName": "White Plains Public Library, Lobby",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/learning.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/17271433",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "adults",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/17271433",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
   },
   {
     "id": "city-conservation-board-meeting-2026-11-16",
