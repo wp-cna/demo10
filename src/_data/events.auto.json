@@ -2673,7 +2673,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/15261810",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "educational presentations",
       "digital technology",
@@ -2706,7 +2706,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/16570538",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "writing and poetry",
       "educational presentations",
@@ -4788,6 +4788,38 @@
     "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=12&year=2026&day=11&calType=0",
     "sourceLabel": "City calendar",
     "importSource": "city"
+  },
+  {
+    "id": "library-creative-upcycling-the-junk-journal-workshop-2026-12-11",
+    "slug": "library-creative-upcycling-the-junk-journal-workshop-2026-12-11",
+    "title": "Creative Upcycling: The Junk Journal Workshop",
+    "category": "Workshop",
+    "shortSummary": "Discover the art of junk journaling!",
+    "fullDescription": "Discover the art of junk journaling! In this hands-on workshop, we?ll turn everyday paper \"junk\"?like old book pages, ticket stubs, maps, wrapping paper, and packaging?into a beautiful, highly personalized scrapbook. Whether you want to document your daily life, create a unique sketchbook, or just enjoy a relaxing craft, junk journaling is the perfect, pressure-free way to express yourself. No prior crafting or artistic experience is needed! We will provide a starter kit of papers, ribbons, and embellishments, but feel free to bring any personal scraps, photos, or flat keepsakes you'd like to include. Check out the full lineup of sewing and crafting classes here! Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-12-11",
+    "endDate": "2026-12-11",
+    "startTime": "14:00",
+    "endTime": "15:30",
+    "locationName": "White Plains Public Library",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/workshop.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/17212945",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "training and course instruction",
+      "educational presentations",
+      "arts and crafts",
+      "adults about 55 and over",
+      "adults",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/17212945",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
   },
   {
     "id": "city-santa-s-mailbox-2026-12-12",
