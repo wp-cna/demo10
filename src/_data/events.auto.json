@@ -2739,7 +2739,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4689&month=10&year=2026&day=28&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
@@ -2766,7 +2766,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/17252540",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "health and wellness",
       "fun and games",
@@ -2796,7 +2796,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/15261886",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "educational presentations",
       "digital technology",
@@ -2829,7 +2829,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/16482236",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "educational presentations",
       "adults",
@@ -3346,6 +3346,7 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
+      "performing arts",
       "international and multicultural",
       "adults",
       "library"
@@ -3405,6 +3406,7 @@
     "status": "upcoming",
     "tags": [
       "training and course instruction",
+      "jobs and careers",
       "educational presentations",
       "teens",
       "parents",
@@ -3606,6 +3608,7 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
+      "jobs and careers",
       "educational presentations",
       "adults",
       "library"
