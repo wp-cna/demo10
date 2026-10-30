@@ -2885,7 +2885,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/17114309",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "history & genealogy",
       "educational presentations",
@@ -2915,7 +2915,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/17268750",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "educational presentations",
       "adults",
@@ -2944,7 +2944,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/17678631",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "health and wellness",
       "fun and games",
@@ -3352,6 +3352,35 @@
     "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4562&month=11&year=2026&day=11&calType=0",
     "sourceLabel": "City calendar",
     "importSource": "city"
+  },
+  {
+    "id": "library-short-story-film-discussion-series-2026-11-12",
+    "slug": "library-short-story-film-discussion-series-2026-11-12",
+    "title": "Short-Story/Film Discussion Series",
+    "category": "Civic",
+    "shortSummary": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, Best Medicine: Stories of Healing (ed.",
+    "fullDescription": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, Best Medicine: Stories of Healing (ed. Dalrymple, Everyman&rsquo;s Pocket Classics, 2021). These compelling works by diverse authors, many of whom were themselves physicians, feature tales of illness and healing, both physical and psychological. We will also discuss related film selections at some sessions to view before we meet. The reading for this date is &ldquo;Dr. Crombie&rdquo; by Graham Greene (1967 &ndash; p.211). The odd advice of a controversial school doctor leads to troubling lifelong consequences. Copies of the series anthology are available to reserve through the White Plains Catalog with one held at the Reference Desk for reading in the Library. We will meet Thursdays from 2:00 - 4:00 PM on 11/12/26, 12/3/26, 12/17/26, 1/7/27, and 1/21/27. Meeting ID for all sessions is: 880 7463 9775 or phone in at 1 929 205 6099, no password needed. Click This Zoom Link to register once for the full series and join us when you can. The program is supported by The Friends of the White Plains Library. All are welcome, including newcomers! Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-11-12",
+    "endDate": "2026-11-12",
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "locationName": "White Plains Public Library, Ask Staff For More Information",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/civic.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/17250666",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "books and authors",
+      "adults",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/17250666",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
   },
   {
     "id": "library-salsa-with-addie-2026-11-14",
@@ -3830,36 +3859,6 @@
     "importSource": "library"
   },
   {
-    "id": "library-bookbinding-and-journalmaking-workshop-2026-11-21",
-    "slug": "library-bookbinding-and-journalmaking-workshop-2026-11-21",
-    "title": "Bookbinding & Journalmaking Workshop",
-    "category": "Workshop",
-    "shortSummary": "Come learn to make small accordion books and create coptic stitch journals of your own!",
-    "fullDescription": "Come learn to make small accordion books and create coptic stitch journals of your own! Great for personal use or as gifts for your family and friends Check the library page for registration, tickets, and any schedule updates.",
-    "startDate": "2026-11-21",
-    "endDate": "2026-11-21",
-    "startTime": "11:00",
-    "endTime": "12:30",
-    "locationName": "White Plains Public Library, The Edge",
-    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
-    "image": "/assets/img/events/workshop.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://calendar.whiteplainslibrary.org/event/17677767",
-    "ctaLabel": "Open library page",
-    "featured": false,
-    "status": "upcoming",
-    "tags": [
-      "arts and crafts",
-      "teens",
-      "adults",
-      "library"
-    ],
-    "organizer": "White Plains Public Library",
-    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/17677767",
-    "sourceLabel": "Library calendar",
-    "importSource": "library"
-  },
-  {
     "id": "city-thanksgiving-luncheon-2026-11-24",
     "slug": "city-thanksgiving-luncheon-2026-11-24",
     "title": "Thanksgiving Luncheon",
@@ -4301,6 +4300,35 @@
     "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=12&year=2026&day=3&calType=0",
     "sourceLabel": "City calendar",
     "importSource": "city"
+  },
+  {
+    "id": "library-short-story-film-discussion-series-2026-12-03",
+    "slug": "library-short-story-film-discussion-series-2026-12-03",
+    "title": "Short-Story/Film Discussion Series",
+    "category": "Civic",
+    "shortSummary": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, The Best Medicine: Stories of Healing (ed.",
+    "fullDescription": "Join White Plains Librarian Barbara Wenglin to explore compelling readings from the rich anthology, The Best Medicine: Stories of Healing (ed. Dalrymple, Everyman&rsquo;s Pocket Classics, 2021). These works by diverse authors, many of whom were themselves physicians, feature tales of illness and healing, both physical and psychological. We will also discuss related film selections at some sessions to view before we meet. The reading for this date is &ldquo;Lord Mountdrago&rdquo; by Somerset Maugham (1940 &ndash; p.233). A powerful politician&rsquo;s disturbing dreams confound his renowned psychoanalyst. Copies of the series anthology are available to reserve through the White Plains Catalog with one held at the Reference Desk for reading in the Library. We will meet Thursdays from 2:00 - 4:00 PM on 12/3/26, 12/17/26, 1/7/27, and 1/21/27. Meeting ID for all sessions is: 880 7463 9775 or phone in at 1 929 205 6099, no password needed. Click This Zoom Link to register once for the full series and join us when you can. The program is supported by The Friends of the White Plains Library. All are welcome, including newcomers! Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-12-03",
+    "endDate": "2026-12-03",
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "locationName": "White Plains Public Library, Ask Staff For More Information",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/civic.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/17252170",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "books and authors",
+      "adults",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/17252170",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
   },
   {
     "id": "city-santa-s-mailbox-2026-12-04",
