@@ -2924,7 +2924,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4690&month=11&year=2026&day=4&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
@@ -2951,7 +2951,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/16563572",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "writing and poetry",
       "teens",
@@ -2981,7 +2981,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4239&month=11&year=2026&day=4&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
@@ -3598,6 +3598,38 @@
     ],
     "organizer": "White Plains Public Library",
     "sourceUrl": "https://calendar.whiteplainslibrary.org/event/17498114",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
+  },
+  {
+    "id": "library-art-101-name-mandalas-2026-11-20",
+    "slug": "library-art-101-name-mandalas-2026-11-20",
+    "title": "Art 101 *Name Mandalas*",
+    "category": "Workshop",
+    "shortSummary": "Turn your name into a work of art!",
+    "fullDescription": "Turn your name into a work of art! Join us for a fun, relaxing design workshop where you&rsquo;ll learn how to repeat, flip, and mirror your name to build a gorgeous, radial mandala. You&rsquo;ll be amazed at how simple cursive or print transforms into an intricate geometric masterpiece. All supplies are provided&mdash;just bring your creativity! Seating is limited; registration required. Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-11-20",
+    "endDate": "2026-11-20",
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "locationName": "White Plains Public Library, Auditorium",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/workshop.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/17139841",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "training and course instruction",
+      "educational presentations",
+      "arts and crafts",
+      "adults about 55 and over",
+      "adults",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/17139841",
     "sourceLabel": "Library calendar",
     "importSource": "library"
   },
@@ -4279,7 +4311,7 @@
     "title": "Future is Female",
     "category": "Learning",
     "shortSummary": "\"A novel both majestic and intimate, original and masterful&hellip;utterly devastating yet ultimately uplifting.",
-    "fullDescription": "\"A novel both majestic and intimate, original and masterful&hellip;utterly devastating yet ultimately uplifting. I think it is her best novel yet.&rdquo; - Boston Globe . This novel is available through our catalog as a book in the Library&rsquo;s physical collection and as an ebook and audiobook in Libby. To join, Click This Zoom Link . You can also use the following phone number to call in: +1 929 436 2866 US (New York). Check the library page for registration, tickets, and any schedule updates.",
+    "fullDescription": "\"A novel both majestic and intimate, original and masterful&hellip;utterly devastating yet ultimately uplifting. I think it is her best novel yet.&rdquo; - Boston Globe . This novel is available through our catalog as a book in the Library&rsquo;s physical collection and as an ebook and e-audiobook in Libby. To join, Click This Zoom Link . You can also use the following phone number to call in: +1 929 436 2866 US (New York). Check the library page for registration, tickets, and any schedule updates.",
     "startDate": "2026-12-07",
     "endDate": "2026-12-07",
     "startTime": "14:00",
