@@ -2952,7 +2952,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/17685472",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "adults",
       "library"
@@ -2980,7 +2980,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/17385100",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "other city department program",
       "adults",
@@ -3009,7 +3009,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4706&month=11&year=2026&day=9&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
@@ -3036,7 +3036,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4716&month=11&year=2026&day=9&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
@@ -3660,6 +3660,67 @@
     ],
     "organizer": "White Plains Public Library",
     "sourceUrl": "https://calendar.whiteplainslibrary.org/event/17678738",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
+  },
+  {
+    "id": "library-bookbinding-and-journalmaking-workshop-2026-11-21",
+    "slug": "library-bookbinding-and-journalmaking-workshop-2026-11-21",
+    "title": "Bookbinding & Journalmaking Workshop",
+    "category": "Workshop",
+    "shortSummary": "Come learn to make small accordion books and create coptic stitch journals of your own!",
+    "fullDescription": "Come learn to make small accordion books and create coptic stitch journals of your own! Great for personal use or as gifts for your family and friends Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-21",
+    "startTime": "11:00",
+    "endTime": "12:30",
+    "locationName": "White Plains Public Library, The Edge",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/workshop.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/17677767",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "arts and crafts",
+      "teens",
+      "adults",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/17677767",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
+  },
+  {
+    "id": "library-soap-making-class-2026-11-22",
+    "slug": "library-soap-making-class-2026-11-22",
+    "title": "Soap Making Class",
+    "category": "Workshop",
+    "shortSummary": "Ever wondered how a few simple oils can turn into a luxurious, bubbly bar of soap?",
+    "fullDescription": "Ever wondered how a few simple oils can turn into a luxurious, bubbly bar of soap? Join us for a beginner-friendly workshop where we'll show you how to ditch the store-bought chemicals and create your own custom soap at home. Check out the full lineup of sewing and crafting classes here! Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-11-22",
+    "endDate": "2026-11-22",
+    "startTime": "13:00",
+    "endTime": "14:30",
+    "locationName": "White Plains Public Library, Auditorium",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/workshop.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/17056419",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "fun and games",
+      "arts and crafts",
+      "adults about 55 and over",
+      "adults",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/17056419",
     "sourceLabel": "Library calendar",
     "importSource": "library"
   },
@@ -4339,7 +4400,7 @@
     "title": "Affordable Housing in White Plains",
     "category": "Civic",
     "shortSummary": "Sponsored by the City of White Plains Planning Department.",
-    "fullDescription": "Sponsored by the City of White Plains Planning Department. For more information, Call 914-422-1300. Registration is recommended. Check the library page for registration, tickets, and any schedule updates.",
+    "fullDescription": "Sponsored by the City of White Plains Planning Department. For more information, call 914-422-1300. Registration is recommended. Check the library page for registration, tickets, and any schedule updates.",
     "startDate": "2026-12-08",
     "endDate": "2026-12-08",
     "startTime": "17:30",
