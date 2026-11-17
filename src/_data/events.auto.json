@@ -1,40 +1,5 @@
 [
   {
-    "id": "library-westchester-during-the-revolutionary-war-history-via-igloo-2026-09-17",
-    "slug": "library-westchester-during-the-revolutionary-war-history-via-igloo-2026-09-17",
-    "title": "Westchester During the Revolutionary War (History via Igloo)",
-    "category": "Learning",
-    "shortSummary": "Learn about Westchester County during the Revolutionary War and what happened throughout the conflict.",
-    "fullDescription": "Learn about Westchester County during the Revolutionary War and what happened throughout the conflict. Held in the Library's panoramic Igloo content room (near the Trove entrance on the 2nd floor), funded by the Library Foundation and Optimum. Presented by Digital Media Specialist Austin Olney. Check the library page for registration, tickets, and any schedule updates.",
-    "startDate": "2026-09-17",
-    "endDate": "2026-09-17",
-    "startTime": "17:00",
-    "endTime": "17:45",
-    "locationName": "White Plains Public Library, The Igloo - Optimum Technology Room",
-    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
-    "image": "/assets/img/events/learning.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://calendar.whiteplainslibrary.org/event/16978331",
-    "ctaLabel": "Open library page",
-    "featured": false,
-    "status": "past",
-    "tags": [
-      "history & genealogy",
-      "educational presentations",
-      "digital technology",
-      "teens",
-      "middle school (grades 6 - 8)",
-      "high school (grades 9 - 12)",
-      "adults about 55 and over",
-      "adults",
-      "library"
-    ],
-    "organizer": "White Plains Public Library",
-    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16978331",
-    "sourceLabel": "Library calendar",
-    "importSource": "library"
-  },
-  {
     "id": "library-hispanic-heritage-month-arepas-2026-09-18",
     "slug": "library-hispanic-heritage-month-arepas-2026-09-18",
     "title": "Hispanic Heritage Month: Arepas",
@@ -3026,7 +2991,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4715&month=11&year=2026&day=16&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
@@ -3053,7 +3018,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/17221870",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "volunteering",
       "arts and crafts",
@@ -3083,7 +3048,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/16967770",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "training and course instruction",
       "jobs and careers",
@@ -3117,7 +3082,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/17213597",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "training and course instruction",
       "small business and non-profits",
@@ -3149,7 +3114,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4147&month=11&year=2026&day=16&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar",
       "public meeting"
@@ -3187,6 +3152,95 @@
     "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=3662&month=11&year=2026&day=17&calType=0",
     "sourceLabel": "City calendar",
     "importSource": "city"
+  },
+  {
+    "id": "library-intro-to-google-sheets-part-2-2026-11-17",
+    "slug": "library-intro-to-google-sheets-part-2-2026-11-17",
+    "title": "Intro to Google Sheets, Part 2",
+    "category": "Learning",
+    "shortSummary": "For people who already know how to create a simple spreadsheet.",
+    "fullDescription": "For people who already know how to create a simple spreadsheet. Learn to use the fill handle, the IF function and conditional formatting. Participants must have a Google or Gmail account prior to the class and know their username and password. Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-11-17",
+    "endDate": "2026-11-17",
+    "startTime": "16:00",
+    "endTime": "17:15",
+    "locationName": "White Plains Public Library, Community Room",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/learning.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/17523931",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "digital technology",
+      "adults",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/17523931",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
+  },
+  {
+    "id": "library-graphic-novel-chat-and-bingo-kitty-quest-by-phil-corbett-2026-11-17",
+    "slug": "library-graphic-novel-chat-and-bingo-kitty-quest-by-phil-corbett-2026-11-17",
+    "title": "Graphic Novel Chat & BINGO: Kitty Quest by Phil Corbett",
+    "category": "Learning",
+    "shortSummary": "Join us for some fun by talking about Kitty Quest by Phil Corbett!",
+    "fullDescription": "Join us for some fun by talking about Kitty Quest by Phil Corbett! The first 4 students to register will receive a free copy of the graphic novel. Upon registration, please come to the Trove reference desk to pick up your free copy of the graphic novel. Other participants can have a copy placed on hold for them. For best discussion results, please make sure to read the graphic novel before coming to the program. We will also be playing a BINGO game based on Kitty Quest and snacking on treats. About Kitty Quest: Woolfrik and Perigold are two down-on-their-luck kittens in need of some extra cash, so they've decided to become professional monster slayers. Except they don't know the first thing about it! So when a huge beast starts rampaging through town, they are put to the ultimate test. Fortunately, the duo accidentally awakens a ghost named Earl Mortimore, who is the last not-so-living member of an ancient guild of warriors, and he's going to teach them everything he knows. Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-11-17",
+    "endDate": "2026-11-17",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "locationName": "White Plains Public Library, Story Trove",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/learning.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/17691270",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "books and authors",
+      "children",
+      "elementary school (grades 1 - 6)",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/17691270",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
+  },
+  {
+    "id": "library-favorite-holiday-soups-and-sweets-2026-11-17",
+    "slug": "library-favorite-holiday-soups-and-sweets-2026-11-17",
+    "title": "Favorite Holiday Soups & Sweets",
+    "category": "Learning",
+    "shortSummary": "In this virtual cooking class, you'll learn how to make a cozy pot of curried pumpkin soup.",
+    "fullDescription": "In this virtual cooking class, you'll learn how to make a cozy pot of curried pumpkin soup. We'll also bake up a batch of tender maple cookies to make sure your sweet tooth isn't left behind. Presenter Ashley Covelli @BigFlavors. Registration is required. Register here: Favorite Holiday Soups &amp; Sweets This program is presented in collaboration with the North Castle Public Library and several other Westchester libraries. Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2026-11-17",
+    "endDate": "2026-11-17",
+    "startTime": "17:30",
+    "endTime": "18:30",
+    "locationName": "White Plains Public Library, Ask Staff For More Information",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/learning.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/17602717",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "educational presentations",
+      "health and wellness",
+      "adults",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/17602717",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
   },
   {
     "id": "library-white-plains-beautification-foundation-2026-11-17",
@@ -3320,8 +3374,8 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
-      "jobs and careers",
       "educational presentations",
+      "jobs and careers",
       "adults",
       "library"
     ],
@@ -3351,10 +3405,10 @@
     "status": "upcoming",
     "tags": [
       "educational presentations",
-      "teens",
-      "parents",
-      "families",
       "adults",
+      "families",
+      "parents",
+      "teens",
       "library"
     ],
     "organizer": "White Plains Public Library",
@@ -3382,13 +3436,13 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
-      "jobs and careers",
-      "educational presentations",
       "digital technology",
-      "teens",
-      "parents",
-      "high school (grades 9 - 12)",
+      "educational presentations",
+      "jobs and careers",
       "adults about 55 and over",
+      "high school (grades 9 - 12)",
+      "parents",
+      "teens",
       "library"
     ],
     "organizer": "White Plains Public Library",
@@ -3416,11 +3470,11 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
-      "training and course instruction",
-      "educational presentations",
       "arts and crafts",
-      "adults about 55 and over",
+      "educational presentations",
+      "training and course instruction",
       "adults",
+      "adults about 55 and over",
       "library"
     ],
     "organizer": "White Plains Public Library",
@@ -3503,11 +3557,11 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
-      "steam",
-      "fun and games",
       "arts and crafts",
-      "families",
+      "fun and games",
+      "steam",
       "children",
+      "families",
       "library"
     ],
     "organizer": "White Plains Public Library",
@@ -3536,8 +3590,8 @@
     "status": "upcoming",
     "tags": [
       "arts and crafts",
-      "teens",
       "adults",
+      "teens",
       "library"
     ],
     "organizer": "White Plains Public Library",
@@ -3565,8 +3619,8 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
-      "educational presentations",
       "digital technology",
+      "educational presentations",
       "adults",
       "library"
     ],
@@ -3595,10 +3649,10 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
-      "fun and games",
       "arts and crafts",
-      "adults about 55 and over",
+      "fun and games",
       "adults",
+      "adults about 55 and over",
       "library"
     ],
     "organizer": "White Plains Public Library",
@@ -3898,12 +3952,12 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
-      "training and course instruction",
       "educational presentations",
-      "teens",
-      "parents",
-      "adults about 55 and over",
+      "training and course instruction",
       "adults",
+      "adults about 55 and over",
+      "parents",
+      "teens",
       "library"
     ],
     "organizer": "White Plains Public Library",
@@ -4013,8 +4067,8 @@
     "status": "upcoming",
     "tags": [
       "writing and poetry",
-      "teens",
       "adults",
+      "teens",
       "library"
     ],
     "organizer": "White Plains Public Library",
@@ -4234,8 +4288,8 @@
     "status": "upcoming",
     "tags": [
       "books and authors",
-      "adults about 55 and over",
       "adults",
+      "adults about 55 and over",
       "library"
     ],
     "organizer": "White Plains Public Library",
@@ -4263,8 +4317,8 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
-      "international and multicultural",
       "art exhibit and gallery opening",
+      "international and multicultural",
       "adults",
       "library"
     ],
@@ -4490,8 +4544,8 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
-      "educational presentations",
       "digital technology",
+      "educational presentations",
       "adults",
       "library"
     ],
@@ -4576,11 +4630,11 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
-      "training and course instruction",
-      "educational presentations",
       "arts and crafts",
-      "adults about 55 and over",
+      "educational presentations",
+      "training and course instruction",
       "adults",
+      "adults about 55 and over",
       "library"
     ],
     "organizer": "White Plains Public Library",
@@ -4689,12 +4743,12 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
-      "training and course instruction",
       "educational presentations",
-      "teens",
-      "parents",
-      "high school (grades 9 - 12)",
+      "training and course instruction",
       "adults",
+      "high school (grades 9 - 12)",
+      "parents",
+      "teens",
       "library"
     ],
     "organizer": "White Plains Public Library",
@@ -4779,12 +4833,12 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
-      "educational presentations",
       "arts and crafts",
-      "teens",
-      "middle school (grades 6 - 8)",
-      "elementary school (grades 1 - 6)",
+      "educational presentations",
       "children",
+      "elementary school (grades 1 - 6)",
+      "middle school (grades 6 - 8)",
+      "teens",
       "library"
     ],
     "organizer": "White Plains Public Library",
@@ -4869,8 +4923,8 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
-      "film",
       "books and authors",
+      "film",
       "adults",
       "library"
     ],
@@ -4954,13 +5008,13 @@
     "featured": false,
     "status": "upcoming",
     "tags": [
-      "jobs and careers",
-      "educational presentations",
       "digital technology",
-      "teens",
-      "parents",
-      "high school (grades 9 - 12)",
+      "educational presentations",
+      "jobs and careers",
       "adults about 55 and over",
+      "high school (grades 9 - 12)",
+      "parents",
+      "teens",
       "library"
     ],
     "organizer": "White Plains Public Library",
