@@ -3378,7 +3378,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/15908584",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "fun and games",
       "performing arts",
@@ -3410,7 +3410,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/17498114",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "digital technology",
       "educational presentations",
@@ -3437,7 +3437,7 @@
     "endDate": "2026-11-20",
     "startTime": "14:00",
     "endTime": "16:00",
-    "locationName": "White Plains Public Library, Auditorium",
+    "locationName": "White Plains Public Library, Museum Gallery",
     "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
     "image": "/assets/img/events/workshop.svg",
     "flyerPdf": null,
@@ -5059,9 +5059,9 @@
     "importSource": "city"
   },
   {
-    "id": "library-college-tours-in-the-igloo-2026-12-27",
-    "slug": "library-college-tours-in-the-igloo-2026-12-27",
-    "title": "College Tours (in the Igloo)",
+    "id": "library-virtual-college-tours-in-the-igloo-2026-12-27",
+    "slug": "library-virtual-college-tours-in-the-igloo-2026-12-27",
+    "title": "Virtual College Tours (in the Igloo)",
     "category": "Learning",
     "shortSummary": "This series of programs allows prospective students to virtually visit selected college campuses via the Igloo panoramic video room in the library.",
     "fullDescription": "This series of programs allows prospective students to virtually visit selected college campuses via the Igloo panoramic video room in the library. During each session, requests to \"see\" colleges will be based on crowd choice. Held in the Library's panoramic Igloo content room (near Trove entrance on 2nd floor), funded by the Library Foundation and Optimum. Presented by Digital Media Specialist Austin Olney. Check the library page for registration, tickets, and any schedule updates.",
@@ -5069,7 +5069,7 @@
     "endDate": "2026-12-27",
     "startTime": "14:00",
     "endTime": "14:45",
-    "locationName": "White Plains Public Library, The Igloo - Optimum Technology Room",
+    "locationName": "White Plains Public Library",
     "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
     "image": "/assets/img/events/learning.svg",
     "flyerPdf": null,
