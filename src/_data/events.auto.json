@@ -1,38 +1,5 @@
 [
   {
-    "id": "library-finding-the-best-college-fit-2026-09-21",
-    "slug": "library-finding-the-best-college-fit-2026-09-21",
-    "title": "Finding the Best College Fit",
-    "category": "Workshop",
-    "shortSummary": "There are over 2,000 four-year colleges in the United States for students to consider.",
-    "fullDescription": "There are over 2,000 four-year colleges in the United States for students to consider. Needless to say, finding your perfect fit can be overwhelming. Amidst the sea of lists, rankings, and opinions - it can feel like you'll be researching forever. But don't fret, we're here to help! Join us online on 11/30 @ 6:30pm as Jordan Kanarek, Partner at Collegewise and Founder of Kanarek Consulting, shares ways to... -Evaluate the many factors that need to be considered when picking a college -Determine the tools and strategies to research your best-fit college choices -Learn how to plan a college visit to make the most out of your trip -Discuss how best to approach this for your family and financial needs! Come and let us help you navigate the maze of college choices and empower you with with the tools to find the right fit for you. Spots are limited, register today! The program will be presented in partnership with: John C. Hart Memorial Library, New Rochelle Public Library, Port Chester-Rye Brook Public Library, &amp; Warner Library. Check the library page for registration, tickets, and any schedule updates.",
-    "startDate": "2026-09-21",
-    "endDate": "2026-09-21",
-    "startTime": "18:30",
-    "endTime": "19:30",
-    "locationName": "White Plains Public Library",
-    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
-    "image": "/assets/img/events/workshop.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://calendar.whiteplainslibrary.org/event/16996672",
-    "ctaLabel": "Open library page",
-    "featured": false,
-    "status": "past",
-    "tags": [
-      "training and course instruction",
-      "educational presentations",
-      "teens",
-      "parents",
-      "adults about 55 and over",
-      "adults",
-      "library"
-    ],
-    "organizer": "White Plains Public Library",
-    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/16996672",
-    "sourceLabel": "Library calendar",
-    "importSource": "library"
-  },
-  {
     "id": "city-covid-19-and-flu-vaccine-clinics-2026-09-22",
     "slug": "city-covid-19-and-flu-vaccine-clinics-2026-09-22",
     "title": "Covid-19 and Flu Vaccine Clinics",
@@ -3444,7 +3411,7 @@
     "externalUrl": "https://calendar.whiteplainslibrary.org/event/17139841",
     "ctaLabel": "Open library page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "arts and crafts",
       "educational presentations",
@@ -3476,7 +3443,7 @@
     "externalUrl": "https://wpbid.com/events/sip-sew-at-loola-doola-collective/",
     "ctaLabel": "Open event page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "downtown",
       "bid"
@@ -5145,6 +5112,36 @@
     "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4725&month=1&year=2027&day=1&calType=0",
     "sourceLabel": "City calendar",
     "importSource": "city"
+  },
+  {
+    "id": "library-future-is-female-2027-01-04",
+    "slug": "library-future-is-female-2027-01-04",
+    "title": "Future is Female",
+    "category": "Learning",
+    "shortSummary": "&ldquo;A heartwarming memoir that creatively reconstructs the author&rsquo;s grandmother&rsquo;s voice to tell the story of 4 generations of strong…",
+    "fullDescription": "&ldquo;A heartwarming memoir that creatively reconstructs the author&rsquo;s grandmother&rsquo;s voice to tell the story of 4 generations of strong women.&rdquo; - Amazon . &ldquo;I have not been as profoundly moved by a book in years.&rdquo; - Jodi Picoult. This memoir is available through our catalog as a book in the Library&rsquo;s physical collection and as an ebook and e-audiobook in Libby. To join, Click This Zoom Link . You can also use the following phone number to call in: +1 929 436 2866 US (New York). Check the library page for registration, tickets, and any schedule updates.",
+    "startDate": "2027-01-04",
+    "endDate": "2027-01-04",
+    "startTime": "14:00",
+    "endTime": "15:00",
+    "locationName": "White Plains Public Library, Ask Staff For More Information",
+    "locationAddress": "100 Martine Avenue, White Plains, NY 10601",
+    "image": "/assets/img/events/learning.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://calendar.whiteplainslibrary.org/event/17722636",
+    "ctaLabel": "Open library page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "books and authors",
+      "adults",
+      "adults about 55 and over",
+      "library"
+    ],
+    "organizer": "White Plains Public Library",
+    "sourceUrl": "https://calendar.whiteplainslibrary.org/event/17722636",
+    "sourceLabel": "Library calendar",
+    "importSource": "library"
   },
   {
     "id": "city-common-council-meeting-2027-01-04",
