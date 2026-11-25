@@ -3988,6 +3988,34 @@
     "importSource": "city"
   },
   {
+    "id": "bid-blueprint-to-financial-success-2026-12-07",
+    "slug": "bid-blueprint-to-financial-success-2026-12-07",
+    "title": "Blueprint to Financial Success",
+    "category": "Arts",
+    "shortSummary": "Blueprint to Financial SuccessMonday, December 7 8 AM – 10 AMNY Life Insurance 44 S Broadway White Plains, NY Join us for Business Connect!",
+    "fullDescription": "Blueprint to Financial SuccessMonday, December 7 8 AM – 10 AMNY Life Insurance 44 S Broadway White Plains, NY Join us for Business Connect! Discover financial success strategies, plan for the future, and network with fellow local business owners.Business Connect is a new series designed. Use the BID page for tickets, participating businesses, and weather updates.",
+    "startDate": "2026-12-07",
+    "endDate": "2026-12-07",
+    "startTime": "08:00",
+    "endTime": "10:00",
+    "locationName": "White Plains BID District",
+    "locationAddress": "Downtown White Plains, NY 10601",
+    "image": "/assets/img/events/arts.svg",
+    "flyerPdf": null,
+    "externalUrl": "https://wpbid.com/events/blueprint-to-financial-success/",
+    "ctaLabel": "Open event page",
+    "featured": false,
+    "status": "upcoming",
+    "tags": [
+      "downtown",
+      "bid"
+    ],
+    "organizer": "White Plains Business Improvement District",
+    "sourceUrl": "https://wpbid.com/events/blueprint-to-financial-success/",
+    "sourceLabel": "White Plains BID",
+    "importSource": "bid"
+  },
+  {
     "id": "library-future-is-female-2026-12-07",
     "slug": "library-future-is-female-2026-12-07",
     "title": "Future is Female",
@@ -4277,12 +4305,12 @@
     "importSource": "city"
   },
   {
-    "id": "bid-downtown-dance-at-arthur-murray-2026-12-09",
-    "slug": "bid-downtown-dance-at-arthur-murray-2026-12-09",
-    "title": "Downtown Dance at Arthur Murray",
+    "id": "bid-downtown-dancing-at-arthur-murray-2026-12-09",
+    "slug": "bid-downtown-dancing-at-arthur-murray-2026-12-09",
+    "title": "Downtown Dancing at Arthur Murray",
     "category": "Food & Downtown",
-    "shortSummary": "Downtown Meet-ups Presents:DOWNTOWN DANCE AT ARTHUR MURRAY WHITE PLAINSWEDNESDAY, DECEMBER 9 | 6 PM – 8 PM Get your dancing shoes ready because we are spicing…",
-    "fullDescription": "Downtown Meet-ups Presents:DOWNTOWN DANCE AT ARTHUR MURRAY WHITE PLAINSWEDNESDAY, DECEMBER 9 | 6 PM – 8 PM Get your dancing shoes ready because we are spicing things up with a dance lesson at Arthur Murray Dance Studio. $10 RSVP | Limited Spots Use the BID page for tickets, participating businesses, and weather updates.",
+    "shortSummary": "Downtown Meet-ups Presents:DOWNTOWN Dancing AT ARTHUR MURRAY WHITE PLAINSWEDNESDAY, DECEMBER 9 | 6 PM – 8 PM Get your dancing shoes ready because we are spicing…",
+    "fullDescription": "Downtown Meet-ups Presents:DOWNTOWN Dancing AT ARTHUR MURRAY WHITE PLAINSWEDNESDAY, DECEMBER 9 | 6 PM – 8 PM Get your dancing shoes ready because we are spicing things up with a dance lesson at Arthur Murray Dance Studio. $10 RSVP | Limited Spots Use the BID page for tickets, participating businesses, and weather updates.",
     "startDate": "2026-12-09",
     "endDate": "2026-12-09",
     "startTime": "18:00",
