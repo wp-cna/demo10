@@ -1,33 +1,5 @@
 [
   {
-    "id": "city-common-council-work-session-2026-09-28",
-    "slug": "city-common-council-work-session-2026-09-28",
-    "title": "Common Council Work Session",
-    "category": "Civic",
-    "shortSummary": "Common Council Work Session is listed on the official White Plains city calendar.",
-    "fullDescription": "Common Council Work Session is listed on the official White Plains city calendar. It is set for White Plains, NY. Use the official city page for agendas, updates, and any location changes.",
-    "startDate": "2026-09-28",
-    "endDate": "2026-09-28",
-    "startTime": "18:30",
-    "endTime": "19:30",
-    "locationName": "White Plains",
-    "locationAddress": "White Plains, NY",
-    "image": "/assets/img/events/civic.svg",
-    "flyerPdf": null,
-    "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4267&month=9&year=2026&day=28&calType=0",
-    "ctaLabel": "Open city page",
-    "featured": false,
-    "status": "past",
-    "tags": [
-      "city calendar",
-      "city hall"
-    ],
-    "organizer": "City of White Plains",
-    "sourceUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4267&month=9&year=2026&day=28&calType=0",
-    "sourceLabel": "City calendar",
-    "importSource": "city"
-  },
-  {
     "id": "city-court-street-market-2026-09-30",
     "slug": "city-court-street-market-2026-09-30",
     "title": "Court Street Market",
@@ -3374,7 +3346,7 @@
     "externalUrl": "https://www.cityofwhiteplains.com/Calendar.aspx?EID=4580&month=11&year=2026&day=27&calType=0",
     "ctaLabel": "Open city page",
     "featured": false,
-    "status": "upcoming",
+    "status": "past",
     "tags": [
       "city calendar"
     ],
